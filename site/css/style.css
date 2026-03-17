@@ -60,10 +60,12 @@ ul { list-style: none; }
 .hdr { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.06); }
 .hdr .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .hdr-logo { display: flex; align-items: center; gap: 12px; }
-.hdr-logo-img { height: 60px; width: auto; }
+.hdr-logo-img { height: 72px; width: auto; }
 .hdr-nav { display: flex; align-items: center; gap: 36px; }
 .hdr-nav a { font-size: 15px; font-weight: 700; color: var(--dark); transition: color 0.25s; }
 .hdr-nav a:hover { color: var(--blue); }
+.hdr-nav a.btn-fill { color: var(--white); }
+.hdr-nav a.btn-fill:hover { color: var(--white); }
 .hdr-toggle { display: none; background: none; border: none; font-size: 26px; cursor: pointer; padding: 6px; color: var(--dark); }
 
 /* Hero */
@@ -90,7 +92,7 @@ ul { list-style: none; }
 .logos { padding: 56px 32px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); }
 .logos p { text-align: center; font-family: var(--font); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--gray-400); margin-bottom: 32px; }
 .logos-row { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
-.logos-row img { height: 44px; max-width: 160px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.5; transition: all 0.3s ease; }
+.logos-row img { height: 32px; max-width: 140px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: 0.5; transition: all 0.3s ease; }
 .logos-row img:hover { filter: grayscale(0%); opacity: 1; }
 .logos-row span { font-family: var(--font); font-size: 16px; font-weight: 800; color: var(--gray-400); letter-spacing: 0.5px; white-space: nowrap; transition: color 0.3s; opacity: 0.6; }
 .logos-row span:hover { color: var(--dark); opacity: 1; }
