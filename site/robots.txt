@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /lp/
-
 Sitemap: https://expansionvideos.com/sitemap.xml
