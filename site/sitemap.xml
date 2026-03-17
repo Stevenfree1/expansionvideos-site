@@ -4,16 +4,35 @@
   <!-- Main pages -->
   <url><loc>https://expansionvideos.com/</loc><lastmod>2026-03-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://expansionvideos.com/services/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://expansionvideos.com/services/explainer-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/pricing/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://expansionvideos.com/contact/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/process/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://expansionvideos.com/ai-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Service pages -->
+  <url><loc>https://expansionvideos.com/services/explainer-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://expansionvideos.com/services/2d-animation/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://expansionvideos.com/services/ai-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://expansionvideos.com/services/3d-animation/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://expansionvideos.com/services/corporate-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://expansionvideos.com/services/video-production/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://expansionvideos.com/pricing/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://expansionvideos.com/process/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://expansionvideos.com/contact/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://expansionvideos.com/ai-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Video type pages -->
+  <url><loc>https://expansionvideos.com/services/product-demo/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/testimonial-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/training-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/social-media-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Industry pages -->
+  <url><loc>https://expansionvideos.com/services/industries/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/saas/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/healthcare/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/fintech/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/ecommerce/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/real-estate/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/startup/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/education/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/services/industries/nonprofit/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Order pages -->
   <url><loc>https://expansionvideos.com/order/ai-video/</loc><lastmod>2026-03-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -22,7 +41,14 @@
   <!-- Blog index -->
   <url><loc>https://expansionvideos.com/blog/</loc><lastmod>2026-03-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
-  <!-- Blog posts -->
+  <!-- High-traffic SEO blog posts (new) -->
+  <url><loc>https://expansionvideos.com/blog/video-marketing-statistics/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://expansionvideos.com/blog/how-much-does-explainer-video-cost/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://expansionvideos.com/blog/best-explainer-videos/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://expansionvideos.com/blog/explainer-video-script/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://expansionvideos.com/blog/animated-video-for-business/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
+  <!-- Existing blog posts -->
   <url><loc>https://expansionvideos.com/blog/why-video-works/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://expansionvideos.com/blog/explainer-video-guide/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://expansionvideos.com/blog/ai-video-vs-traditional/</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
