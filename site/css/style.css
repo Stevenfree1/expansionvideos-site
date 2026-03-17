@@ -54,6 +54,8 @@ ul { list-style: none; }
 .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); transform: translateY(-3px); }
 .btn-ghost { background: transparent; color: var(--dark); border: 2px solid var(--gray-200); }
 .btn-ghost:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-3px); }
+.btn-red { background: #dc2626; color: #fff; border: none; box-shadow: 0 4px 20px rgba(220,38,38,0.3); }
+.btn-red:hover { background: #b91c1c; transform: translateY(-3px); box-shadow: 0 8px 30px rgba(220,38,38,0.45); color: #fff; }
 .btn-w100 { width: 100%; }
 
 /* Header */
