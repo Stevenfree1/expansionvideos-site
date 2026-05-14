@@ -261,13 +261,38 @@ P['contact/index.html'] = {
     </div>
     <div class="ct-form">
         <h3>Send us a message</h3>
-        <form action="https://formspree.io/f/studio@expansionvideos.com" method="POST">
-            <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
-            <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@company.com" required></div>
-            <div class="fg"><label>Company</label><input type="text" name="company" placeholder="Optional"></div>
-            <div class="fg"><label>Message</label><textarea name="message" placeholder="Tell us about your project..." required></textarea></div>
-            <button type="submit" class="btn btn-fill btn-w100 btn-lg">Send Message →</button>
-        </form>
+        <p id="ct-status" style="display:none;margin-bottom:12px"></p>
+        <div class="fg"><label>Name</label><input type="text" id="ct-name" placeholder="Your name" required></div>
+        <div class="fg"><label>Email</label><input type="email" id="ct-email" placeholder="you@company.com" required></div>
+        <div class="fg"><label>Company</label><input type="text" id="ct-company" placeholder="Optional"></div>
+        <div class="fg"><label>Message</label><textarea id="ct-message" placeholder="Tell us about your project..." required></textarea></div>
+        <button id="ct-btn" onclick="evSubmit()" class="btn btn-fill btn-w100 btn-lg">Send Message →</button>
+        <script>
+        async function evSubmit() {
+            const btn = document.getElementById('ct-btn');
+            const status = document.getElementById('ct-status');
+            const name = document.getElementById('ct-name').value.trim();
+            const email = document.getElementById('ct-email').value.trim();
+            const company = document.getElementById('ct-company').value.trim();
+            const message = document.getElementById('ct-message').value.trim();
+            if (!name || !email || !message) { status.textContent = 'Please fill in all required fields.'; status.style.display='block'; status.style.color='red'; return; }
+            btn.disabled = true; btn.textContent = 'Sending...';
+            try {
+                const res = await fetch('https://leads.mikaelhamrin.com/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer mikael-leads-2026' },
+                    body: JSON.stringify({ name, email, company, message, source: 'ev-contact-form', brand: 'ev' })
+                });
+                const data = await res.json();
+                if (data.success) { window.location.href = '/thank-you/'; }
+                else { throw new Error('Failed'); }
+            } catch(e) {
+                status.textContent = 'Something went wrong. Please email us directly at studio@expansionvideos.com';
+                status.style.display='block'; status.style.color='red';
+                btn.disabled = false; btn.textContent = 'Send Message →';
+            }
+        }
+        </script>
     </div>
 </div>
 </div></section>
@@ -278,6 +303,24 @@ P['contact/index.html'] = {
 </div></section>
 '''}
 
+
+P['thank-you/index.html'] = {
+'title': 'Thank You | ExpansionVideos',
+'desc': 'Your request has been received. We will get back to you within 24 hours.',
+'body': '''
+<section class="hero" style="min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;">
+<div class="wrap">
+    <p class="label">Thank you</p>
+    <h1 class="h1">Request received!</h1>
+    <p class="sub" style="max-width:520px;margin:1rem auto 2rem;">We have got your message and will get back to you within 24 hours. Feel free to book a free call directly.</p>
+    <div class="hero-btns" style="justify-content:center;">
+        <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book a call</a>
+        <a href="/" class="btn btn-outline btn-lg">Back to home</a>
+    </div>
+</div>
+</section>
+'''}
+
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
     os.makedirs(os.path.dirname(fp), exist_ok=True)
@@ -286,3 +329,20 @@ for fn, pg in P.items():
         f.write(html)
     print(f'✅ {fn} ({len(html):,} bytes)')
 print(f'\n🚀 {len(P)} pages built!')
+
+P['thank-you/index.html'] = {
+'title': 'Thank You | ExpansionVideos',
+'desc': 'Your request has been received. We will get back to you within 24 hours.',
+'body': '''
+<section class="hero" style="min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;">
+<div class="wrap">
+    <p class="label">Thank you</p>
+    <h1 class="h1">Request received! ✅</h1>
+    <p class="sub" style="max-width:520px;margin:1rem auto 2rem;">We've got your message and will get back to you within 24 hours. In the meantime, feel free to book a free call directly.</p>
+    <div class="hero-btns" style="justify-content:center;">
+        <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book a call →</a>
+        <a href="/" class="btn btn-outline btn-lg">Back to home</a>
+    </div>
+</div>
+</section>
+'''}
