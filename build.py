@@ -6,7 +6,7 @@ SITE = os.path.join(os.path.dirname(__file__), 'site')
 HEAD = '''<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><link rel="canonical" href="https://expansionvideos.com/"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="stylesheet" href="/css/style.css">
@@ -50,7 +50,7 @@ P['index.html'] = {
 </div>
 <div class="hero-video">
     <div class="hero-video-inner">
-        <iframe src="https://www.youtube.com/embed/-ls8HYBvVw8?rel=0" title="ExpansionVideos" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+        <div class="yt-facade" data-id="-ls8HYBvVw8" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/-ls8HYBvVw8?rel=0&autoplay=1\' title=\'ExpansionVideos\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/-ls8HYBvVw8/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div>
     </div>
 </div>
 </div>
@@ -98,9 +98,9 @@ P['index.html'] = {
     <p class="sub mx-a" style="margin-top:16px">Examples from each format — AI Video, 2D Animation and Premium.</p>
 </div>
 <div class="port-grid">
-    <div class="port-card"><div class="port-video"><iframe src="https://www.youtube.com/embed/-ls8HYBvVw8?rel=0" title="AI Video Example" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="port-info"><span class="port-badge ai">🤖 AI Video</span><h4>ExpansionVideos</h4><p>Fast, cost-effective AI production. Perfect for ads and social media campaigns.</p></div></div>
-    <div class="port-card"><div class="port-video"><iframe src="https://www.youtube.com/embed/MbDgRyaIUwc?rel=0" title="Toyota" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="port-info"><span class="port-badge d2">🎬 2D Animation</span><h4>Toyota</h4><p>Hand-crafted 2D explainer for Toyota's electric hybrid cars.</p></div></div>
-    <div class="port-card"><div class="port-video"><iframe src="https://www.youtube.com/embed/3jhOxZUxheY?rel=0" title="Veritas" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="port-info"><span class="port-badge prem">🏆 Premium</span><h4>Veritas</h4><p>Premium animated production for global data management leader.</p></div></div>
+    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/-ls8HYBvVw8?rel=0&autoplay=1\' title=\'AI Video Example\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/-ls8HYBvVw8/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge ai">🤖 AI Video</span><h4>ExpansionVideos</h4><p>Fast, cost-effective AI production. Perfect for ads and social media campaigns.</p></div></div>
+    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/MbDgRyaIUwc?rel=0&autoplay=1\' title=\'Toyota\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/MbDgRyaIUwc/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge d2">🎬 2D Animation</span><h4>Toyota</h4><p>Hand-crafted 2D explainer for Toyota's electric hybrid cars.</p></div></div>
+    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/3jhOxZUxheY?rel=0&autoplay=1\' title=\'Veritas\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/3jhOxZUxheY/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge prem">🏆 Premium</span><h4>Veritas</h4><p>Premium animated production for global data management leader.</p></div></div>
 </div>
 </div>
 </section>
@@ -152,9 +152,65 @@ P['pricing/index.html'] = {
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
-    <div class="price-card pop"><div class="price-dur">🎬 2D Animation</div><div class="price-amt">$797 <small>/30s</small></div><div class="price-desc">Our most popular. Hand-crafted custom design for most businesses.</div><ul class="price-list"><li>Custom 2D animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Unlimited revisions</li><li>3–4 weeks delivery</li><li>All formats included</li></ul><a href="/contact/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
-    <div class="price-card"><div class="price-dur">🏆 Premium / Custom</div><div class="price-amt">Request Quote</div><div class="price-desc">Exclusive quality for demanding projects. Senior team. Cinematic.</div><ul class="price-list"><li>Fully custom production</li><li>Senior animator & team</li><li>Premium voiceover & music</li><li>Unlimited revisions</li><li>Priority delivery</li><li>Dedicated project lead</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
+    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card pop"><div class="price-dur">🎬 2D Animation</div><div class="price-amt">$797 <small>/30s</small></div><div class="price-desc">Our most popular. Hand-crafted custom design for most businesses.</div><ul class="price-list"><li>Custom 2D animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Unlimited revisions</li><li>3–4 weeks delivery</li><li>All formats included</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card"><div class="price-dur">🏆 Premium / Custom</div><div class="price-amt">Request Quote</div><div class="price-desc">Exclusive quality for demanding projects. Senior team. Cinematic.</div><ul class="price-list"><li>Fully custom production</li><li>Senior animator & team</li><li>Premium voiceover & music</li><li>Unlimited revisions</li><li>Priority delivery</li><li>Dedicated project lead</li></ul><a href="/order/premium/" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
+</div>
+
+<div style="margin-top:64px">
+<h2 class="h2 tc" style="margin-bottom:8px">Detailed Pricing by Length</h2>
+<p class="sub tc mx-a" style="max-width:560px;margin-bottom:48px">All prices include script, voiceover, music, animation and revisions. No hidden fees.</p>
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+<thead>
+<tr style="background:#0B0B0B;color:#fff">
+<th style="padding:16px 24px;text-align:left;font-family:var(--font-h);font-weight:700">Video Length</th>
+<th style="padding:16px 24px;text-align:center;font-family:var(--font-h);font-weight:700">🤖 AI Video</th>
+<th style="padding:16px 24px;text-align:center;font-family:var(--font-h);font-weight:700;background:#1a3a6b">🎬 2D Animation</th>
+<th style="padding:16px 24px;text-align:center;font-family:var(--font-h);font-weight:700">🏆 Premium</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #e5e5e5">
+<td style="padding:16px 24px;font-weight:600">30 seconds</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$197</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$797</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
+</tr>
+<tr style="border-bottom:1px solid #e5e5e5;background:#fafafa">
+<td style="padding:16px 24px;font-weight:600">60 seconds</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$397</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$1,397</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
+</tr>
+<tr style="border-bottom:1px solid #e5e5e5">
+<td style="padding:16px 24px;font-weight:600">90 seconds</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$597</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$1,997</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
+</tr>
+<tr style="border-bottom:1px solid #e5e5e5;background:#fafafa">
+<td style="padding:16px 24px;font-weight:600">2 minutes</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$797</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$2,597</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
+</tr>
+<tr style="border-bottom:1px solid #e5e5e5">
+<td style="padding:16px 24px;font-weight:600">3 minutes</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$1,197</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$3,797</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:16px 24px;font-weight:600">Custom length</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Contact us</td>
+<td style="padding:16px 24px;text-align:center;color:#525252;background:#f0f5ff">Contact us</td>
+<td style="padding:16px 24px;text-align:center;color:#525252">Contact us</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align:center;margin-top:24px;font-size:14px;color:#737373">All prices in USD. <a href="/contact/" style="color:#0057b8;font-weight:600">Contact us</a> for volume discounts or custom requirements.</p>
 </div>
 </div></section>
 
@@ -226,8 +282,8 @@ P['ai-video/index.html'] = {
 <section class="sec sec-gray">
 <div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">Basic</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Template AI visuals. Perfect for ads and social media.</div><ul class="price-list"><li>AI-generated scenes</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
-    <div class="price-card pop"><div class="price-dur">Professional</div><div class="price-amt">$397 <small>/30s</small></div><div class="price-desc">Custom AI animation. Best value for most projects.</div><ul class="price-list"><li>Custom AI animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Custom music</li><li>2 revision rounds</li><li>7 business days</li></ul><a href="/contact/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card"><div class="price-dur">Basic</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Template AI visuals. Perfect for ads and social media.</div><ul class="price-list"><li>AI-generated scenes</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card pop"><div class="price-dur">Professional</div><div class="price-amt">$397 <small>/30s</small></div><div class="price-desc">Custom AI animation. Best value for most projects.</div><ul class="price-list"><li>Custom AI animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Custom music</li><li>2 revision rounds</li><li>7 business days</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
     <div class="price-card"><div class="price-dur">Premium</div><div class="price-amt">$597 <small>/30s</small></div><div class="price-desc">Cinematic AI. Unlimited revisions. Priority delivery.</div><ul class="price-list"><li>Cinematic AI animation</li><li>Senior scriptwriter</li><li>Celebrity-style voiceover</li><li>Original music</li><li>Unlimited revisions</li><li>5 day priority</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
 </div>
 </div></section>
