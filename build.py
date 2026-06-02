@@ -377,6 +377,120 @@ P['thank-you/index.html'] = {
 </section>
 '''}
 
+
+# ── Order pages ────────────────────────────────────────────────
+P['order/ai-video/index.html'] = {
+'title': 'Order AI Video | From $197 — ExpansionVideos',
+'desc': 'Order your AI Video. Choose your length and get started.',
+'body': """
+<section class="hero" style="padding-top:120px;padding-bottom:40px">
+<div class="wrap-sm">
+<p style="margin-bottom:8px"><a href="/pricing/" style="color:var(--blue);font-weight:600">← Back to Pricing</a></p>
+<p class="label">ORDER AI-VIDEO</p>
+<h1 class="h2">Order your <span class="blue">AI-<br>Video</span></h1>
+<p class="sub" style="max-width:480px">Fill in the form below and we'll get back to you within 24 hours with next steps. Money-back guarantee.</p>
+</div>
+</section>
+<section class="sec" style="padding-top:0">
+<div class="wrap-sm">
+<div style="display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start" class="order-layout">
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:24px">Pricing summary</h3>
+<div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:16px;overflow:hidden">
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">30 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$197</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200);background:rgba(37,99,235,0.04)"><div style="font-weight:700;margin-bottom:4px">60 seconds <span style="background:var(--blue);color:white;padding:2px 10px;border-radius:100px;font-size:11px;margin-left:8px">POPULAR</span></div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$397</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">90 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$597</div></div>
+<div style="padding:20px 24px"><div style="font-weight:700;margin-bottom:4px">2 minutes</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$797</div></div>
+</div>
+<div style="margin-top:24px;background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.15);border-radius:12px;padding:20px">
+<h4 style="font-family:var(--font-h);font-weight:700;margin-bottom:12px">All packages include:</h4>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2">
+<li>✓ AI-generated animation</li><li>✓ Professional voiceover</li><li>✓ Background music</li><li>✓ 1 revision round</li><li>✓ 5-7 business days</li><li>✓ HD delivery</li>
+</ul></div>
+</div>
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:24px">Order form</h3>
+<form id="orderForm" style="display:flex;flex-direction:column;gap:20px">
+<div class="fg"><label>YOUR NAME</label><input type="text" name="name" placeholder="Full name" required></div>
+<div class="fg"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required></div>
+<div class="fg"><label>COMPANY / BRAND</label><input type="text" name="company" placeholder="Optional"></div>
+<div class="fg"><label>VIDEO LENGTH</label><select name="length" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>30 seconds &mdash; $197</option><option selected>60 seconds &mdash; $397 (most popular)</option><option>90 seconds &mdash; $597</option><option>2 minutes &mdash; $797</option><option>3 minutes &mdash; $1,197</option></select></div>
+<div class="fg"><label>VIDEO LANGUAGE</label><input type="text" name="language" placeholder="English" value="English"></div>
+<div class="fg"><label>YOUR WEBSITE (OPTIONAL)</label><input type="text" name="website" placeholder="https://yoursite.com"></div>
+<div class="fg"><label>TELL US ABOUT YOUR PRODUCT/SERVICE</label><textarea name="message" placeholder="What does your company do? Who is your target audience? What is the goal of the video?" required></textarea></div>
+<button type="submit" class="btn btn-fill btn-lg">Submit Order →</button>
+</form>
+<script>
+document.getElementById('orderForm').addEventListener('submit',function(e){
+e.preventDefault();
+var btn=this.querySelector('button[type=submit]');
+btn.disabled=true;btn.textContent='Sending...';
+var d=new FormData(this);
+fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'AI Video Order - Length: '+d.get('length')+'\nCompany: '+d.get('company')+'\nLanguage: '+d.get('language')+'\nWebsite: '+d.get('website')+'\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'AI Video'})}).then(function(){window.location='/thank-you/';}).catch(function(){window.location='/thank-you/';});
+});
+</script>
+</div>
+</div>
+<style>@media(max-width:768px){.order-layout{grid-template-columns:1fr !important;gap:32px !important;}}</style>
+</div>
+</section>"""}
+
+P['order/2d-animation/index.html'] = {
+'title': 'Order 2D Animation | From $797 — ExpansionVideos',
+'desc': 'Order your 2D Animation. Choose your length and get started.',
+'body': """
+<section class="hero" style="padding-top:120px;padding-bottom:40px">
+<div class="wrap-sm">
+<p style="margin-bottom:8px"><a href="/pricing/" style="color:var(--blue);font-weight:600">← Back to Pricing</a></p>
+<p class="label">ORDER 2D ANIMATION</p>
+<h1 class="h2">Order your <span class="blue">2D<br>Animation</span></h1>
+<p class="sub" style="max-width:480px">Fill in the form below and we'll get back to you within 24 hours with next steps. Money-back guarantee.</p>
+</div>
+</section>
+<section class="sec" style="padding-top:0">
+<div class="wrap-sm">
+<div style="display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start" class="order-layout">
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:24px">Pricing summary</h3>
+<div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:16px;overflow:hidden">
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">30 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$797</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200);background:rgba(37,99,235,0.04)"><div style="font-weight:700;margin-bottom:4px">60 seconds <span style="background:var(--blue);color:white;padding:2px 10px;border-radius:100px;font-size:11px;margin-left:8px">POPULAR</span></div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$1,397</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">90 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$1,997</div></div>
+<div style="padding:20px 24px"><div style="font-weight:700;margin-bottom:4px">2 minutes</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$2,597</div></div>
+</div>
+<div style="margin-top:24px;background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.15);border-radius:12px;padding:20px">
+<h4 style="font-family:var(--font-h);font-weight:700;margin-bottom:12px">All packages include:</h4>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2">
+<li>✓ Custom 2D animation</li><li>✓ Professional scriptwriter</li><li>✓ Premium voiceover</li><li>✓ Unlimited revisions</li><li>✓ 3-4 weeks delivery</li><li>✓ All formats included</li>
+</ul></div>
+</div>
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:24px">Order form</h3>
+<form id="orderForm" style="display:flex;flex-direction:column;gap:20px">
+<div class="fg"><label>YOUR NAME</label><input type="text" name="name" placeholder="Full name" required></div>
+<div class="fg"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required></div>
+<div class="fg"><label>COMPANY / BRAND</label><input type="text" name="company" placeholder="Optional"></div>
+<div class="fg"><label>VIDEO LENGTH</label><select name="length" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>30 seconds &mdash; $797</option><option selected>60 seconds &mdash; $1,397 (most popular)</option><option>90 seconds &mdash; $1,997</option><option>2 minutes &mdash; $2,597</option><option>3 minutes &mdash; $3,797</option></select></div>
+<div class="fg"><label>VIDEO LANGUAGE</label><input type="text" name="language" placeholder="English" value="English"></div>
+<div class="fg"><label>YOUR WEBSITE (OPTIONAL)</label><input type="text" name="website" placeholder="https://yoursite.com"></div>
+<div class="fg"><label>TELL US ABOUT YOUR PRODUCT/SERVICE</label><textarea name="message" placeholder="What does your company do? Who is your target audience? What is the goal of the video?" required></textarea></div>
+<button type="submit" class="btn btn-fill btn-lg">Submit Order →</button>
+</form>
+<script>
+document.getElementById('orderForm').addEventListener('submit',function(e){
+e.preventDefault();
+var btn=this.querySelector('button[type=submit]');
+btn.disabled=true;btn.textContent='Sending...';
+var d=new FormData(this);
+fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'2D Animation Order - Length: '+d.get('length')+'\nCompany: '+d.get('company')+'\nLanguage: '+d.get('language')+'\nWebsite: '+d.get('website')+'\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'2D Animation'})}).then(function(){window.location='/thank-you/';}).catch(function(){window.location='/thank-you/';});
+});
+</script>
+</div>
+</div>
+<style>@media(max-width:768px){.order-layout{grid-template-columns:1fr !important;gap:32px !important;}}</style>
+</div>
+</section>"""}
+
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
     os.makedirs(os.path.dirname(fp), exist_ok=True)
