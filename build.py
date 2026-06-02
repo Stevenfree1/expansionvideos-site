@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """ExpansionVideos.com — Premium Build"""
 import os
+import time
 SITE = os.path.join(os.path.dirname(__file__), 'site')
 
 HEAD = '''<!DOCTYPE html>
@@ -491,10 +492,12 @@ fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Ty
 </div>
 </section>"""}
 
+BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
     os.makedirs(os.path.dirname(fp), exist_ok=True)
     html = HEAD.format(title=pg['title'], desc=pg['desc']) + pg['body'] + FOOT
+    html = html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
     with open(fp, 'w', encoding='utf-8') as f:
         f.write(html)
     print(f'✅ {fn} ({len(html):,} bytes)')
