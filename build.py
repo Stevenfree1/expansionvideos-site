@@ -427,7 +427,7 @@ e.preventDefault();
 var btn=this.querySelector('button[type=submit]');
 btn.disabled=true;btn.textContent='Sending...';
 var d=new FormData(this);
-fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'AI Video Order - Length: '+d.get('length')+'\nCompany: '+d.get('company')+'\nLanguage: '+d.get('language')+'\nWebsite: '+d.get('website')+'\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'AI Video'})}).then(function(){window.location='/thank-you/';}).catch(function(){window.location='/thank-you/';});
+fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'AI Video Order - Length: '+d.get('length')+'\\nCompany: '+d.get('company')+'\\nLanguage: '+d.get('language')+'\\nWebsite: '+d.get('website')+'\\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'AI Video'})}).then(function(){try{sessionStorage.setItem('ev_order',JSON.stringify({name:d.get('name'),email:d.get('email'),company:d.get('company'),website:d.get('website')}));}catch(_){}window.location='/order/ai-video/brief/';}).catch(function(){window.location='/order/ai-video/brief/';});
 });
 </script>
 </div>
@@ -484,7 +484,7 @@ e.preventDefault();
 var btn=this.querySelector('button[type=submit]');
 btn.disabled=true;btn.textContent='Sending...';
 var d=new FormData(this);
-fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'2D Animation Order - Length: '+d.get('length')+'\nCompany: '+d.get('company')+'\nLanguage: '+d.get('language')+'\nWebsite: '+d.get('website')+'\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'2D Animation'})}).then(function(){window.location='/thank-you/';}).catch(function(){window.location='/thank-you/';});
+fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:'2D Animation Order - Length: '+d.get('length')+'\\nCompany: '+d.get('company')+'\\nLanguage: '+d.get('language')+'\\nWebsite: '+d.get('website')+'\\nMessage: '+d.get('message'),source:'expansionvideos-order',service:'2D Animation'})}).then(function(){try{sessionStorage.setItem('ev_order',JSON.stringify({name:d.get('name'),email:d.get('email'),company:d.get('company'),website:d.get('website')}));}catch(_){}window.location='/order/2d-animation/brief/';}).catch(function(){window.location='/order/2d-animation/brief/';});
 });
 </script>
 </div>
@@ -492,6 +492,82 @@ fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Ty
 <style>@media(max-width:768px){.order-layout{grid-template-columns:1fr !important;gap:32px !important;}}</style>
 </div>
 </section>"""}
+
+# === Project brief pages (order -> brief -> thank-you) ===
+_EV_BRIEF_TMPL = """
+<section class="hero" style="padding-top:120px;padding-bottom:32px">
+<div class="wrap-sm">
+<p style="margin-bottom:8px"><a href="/order/@@PATH@@/" style="color:var(--blue);font-weight:600">&larr; Back to order</a></p>
+<p class="label">PROJECT BRIEF &mdash; @@SVC@@</p>
+<h1 class="h2">Tell us about <span class="blue">your project</span></h1>
+<p class="sub" style="max-width:560px">The more you share, the better we can craft your video. Only name and email are required &mdash; fill in whatever you can and we'll cover the rest on our call.</p>
+</div>
+</section>
+<section class="sec" style="padding-top:0">
+<div class="wrap-sm">
+<form id="briefForm" style="display:flex;flex-direction:column;gap:28px;max-width:680px">
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:18px">1 &middot; Contact &amp; billing</h3>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div class="fg"><label>YOUR NAME</label><input type="text" name="name" placeholder="Full name" required></div>
+<div class="fg"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required></div>
+<div class="fg"><label>COMPANY / BRAND</label><input type="text" name="company" placeholder="Company name"></div>
+<div class="fg"><label>COMPANY REG. / VAT NUMBER</label><input type="text" name="org_number" placeholder="Optional"></div>
+<div class="fg"><label>BILLING ADDRESS</label><input type="text" name="billing_address" placeholder="Street address"></div>
+<div class="fg"><label>POSTAL / ZIP CODE</label><input type="text" name="postal_code" placeholder="Optional"></div>
+<div class="fg"><label>CITY</label><input type="text" name="city" placeholder="Optional"></div>
+<div class="fg"><label>BILLING EMAIL (IF DIFFERENT)</label><input type="email" name="billing_email" placeholder="Optional"></div>
+<div class="fg"><label>YOUR WEBSITE</label><input type="text" name="website" placeholder="https://yoursite.com"></div>
+</div>
+</div>
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:18px">2 &middot; Video specification</h3>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div class="fg"><label>VIDEO TITLE / WORKING NAME</label><input type="text" name="video_title" placeholder="Optional"></div>
+<div class="fg"><label>VIDEO LENGTH</label><select name="video_length" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white">@@LENGTHS@@</select></div>
+<div class="fg"><label>VOICEOVER</label><select name="voiceover" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>Professional voiceover (recommended)</option><option>Male voice</option><option>Female voice</option><option>No voiceover</option><option>We'll provide our own</option></select></div>
+<div class="fg"><label>EXTRA LANGUAGE VERSIONS</label><select name="extra_languages" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>No</option><option>Yes &mdash; 1 extra language</option><option>Yes &mdash; 2+ languages</option><option>Not sure yet</option></select></div>
+<div class="fg"><label>SUBTITLES</label><select name="subtitles" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>No</option><option>Yes &mdash; English</option><option>Yes &mdash; other language</option><option>Not sure yet</option></select></div>
+</div>
+</div>
+<div>
+<h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:18px">3 &middot; About the film</h3>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div class="fg"><label>PURPOSE / GOAL OF THE VIDEO</label><textarea name="purpose" placeholder="What do you want this video to achieve?"></textarea></div>
+<div class="fg"><label>TARGET AUDIENCE</label><textarea name="target_audience" placeholder="Who is this video for?"></textarea></div>
+<div class="fg"><label>ABOUT YOUR COMPANY / ORGANIZATION</label><textarea name="about_company" placeholder="What does your company do?"></textarea></div>
+<div class="fg"><label>COMPETITORS</label><textarea name="competitors" placeholder="Who are your main competitors?"></textarea></div>
+<div class="fg"><label>WHAT SHOULD THE VIDEO COVER?</label><textarea name="topic" placeholder="Key points, product, message..."></textarea></div>
+<div class="fg"><label>TONE &amp; STYLE</label><textarea name="tone" placeholder="Playful, corporate, bold, minimal?"></textarea></div>
+<div class="fg"><label>SPECIFIC WISHES / MUST-HAVES</label><textarea name="wishes" placeholder="Anything that must be included?"></textarea></div>
+<div class="fg"><label>WHERE WILL THE VIDEO BE USED?</label><textarea name="usage" placeholder="Website, social media, ads, trade shows?"></textarea></div>
+<div class="fg"><label>KEY TAKEAWAY &mdash; ONE THING VIEWERS SHOULD REMEMBER</label><textarea name="takeaway" placeholder="The single most important message"></textarea></div>
+<div class="fg"><label>CALL TO ACTION</label><textarea name="cta" placeholder="What should viewers do after watching?"></textarea></div>
+<div class="fg"><label>REFERENCE VIDEOS YOU LIKE (LINKS)</label><input type="url" name="reference" placeholder="https://..."></div>
+<div class="fg"><label>BRAND GUIDELINES &mdash; COLORS, FONTS, LOGO</label><textarea name="brand" placeholder="Describe or link your brand guidelines"></textarea></div>
+<div class="fg"><label>LINK TO LOGOS / ASSETS / MATERIAL</label><input type="url" name="files" placeholder="Google Drive, Dropbox, WeTransfer..."></div>
+</div>
+</div>
+<button type="submit" class="btn btn-fill btn-lg">Submit project brief &rarr;</button>
+<p style="font-size:13px;color:#6b7280;margin-top:-12px">We'll review your brief and get back to you within 24 hours.</p>
+</form>
+<script>
+(function(){var s={};try{s=JSON.parse(sessionStorage.getItem('ev_order')||'{}');}catch(_){}['name','email','company','website'].forEach(function(k){var el=document.querySelector('#briefForm [name='+k+']');if(el&&s[k])el.value=s[k];});
+var f=document.getElementById('briefForm');
+f.addEventListener('submit',function(e){e.preventDefault();var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending...';var d=new FormData(f);
+var msg='@@SVC@@ - PROJECT BRIEF'+'\\n\\nCONTACT & BILLING'+'\\nCompany: '+d.get('company')+'\\nReg/VAT: '+d.get('org_number')+'\\nBilling: '+d.get('billing_address')+', '+d.get('postal_code')+' '+d.get('city')+'\\nBilling email: '+d.get('billing_email')+'\\nWebsite: '+d.get('website')+'\\n\\nVIDEO SPEC'+'\\nTitle: '+d.get('video_title')+'\\nLength: '+d.get('video_length')+'\\nVoiceover: '+d.get('voiceover')+'\\nExtra languages: '+d.get('extra_languages')+'\\nSubtitles: '+d.get('subtitles')+'\\n\\nABOUT THE FILM'+'\\nPurpose: '+d.get('purpose')+'\\nAudience: '+d.get('target_audience')+'\\nAbout company: '+d.get('about_company')+'\\nCompetitors: '+d.get('competitors')+'\\nCovers: '+d.get('topic')+'\\nTone/style: '+d.get('tone')+'\\nWishes: '+d.get('wishes')+'\\nUsage: '+d.get('usage')+'\\nTakeaway: '+d.get('takeaway')+'\\nCTA: '+d.get('cta')+'\\nReferences: '+d.get('reference')+'\\nBrand: '+d.get('brand')+'\\nAssets: '+d.get('files');
+fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer mikael-leads-2026'},body:JSON.stringify({name:d.get('name'),email:d.get('email'),message:msg,source:'expansionvideos-brief',service:'@@SVC@@'})}).then(function(){try{sessionStorage.removeItem('ev_order');}catch(_){}window.location='/thank-you/';}).catch(function(){window.location='/thank-you/';});
+});})();
+</script>
+</div>
+</section>"""
+def _ev_brief(svc, path, lengths):
+    b=_EV_BRIEF_TMPL.replace('@@SVC@@',svc).replace('@@PATH@@',path).replace('@@LENGTHS@@',lengths)
+    return {'title':'Project Brief - '+svc+' | ExpansionVideos','desc':'Tell us about your '+svc+' project so we can craft the perfect video.','body':b}
+_EVL='<option>30 seconds</option><option selected>60 seconds</option><option>90 seconds</option><option>2 minutes</option><option>3 minutes</option>'
+P['order/ai-video/brief/index.html']=_ev_brief('AI Video','ai-video',_EVL)
+P['order/2d-animation/brief/index.html']=_ev_brief('2D Animation','2d-animation',_EVL)
+
 
 BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
