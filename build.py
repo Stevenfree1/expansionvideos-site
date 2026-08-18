@@ -12,6 +12,8 @@ HEAD = '''<!DOCTYPE html>
 <meta name="description" content="{desc}">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/img/favicon.png" type="image/png">
+<meta property="og:image" content="https://expansionvideos.com/img/logo.png">
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos since 2015."}}</script>
 </head>
 <body>
 <header class="hdr"><div class="wrap">
