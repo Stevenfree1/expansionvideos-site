@@ -36,7 +36,7 @@ P = {}
 
 P['index.html'] = {
 'title': '2D Animation, AI Video & Premium — ExpansionVideos',
-'desc': 'Professional animated explainer videos — 2D Animation, AI Video & Premium. From $197. 500+ videos for 56+ industries since 2015. Money-back guarantee.',
+'desc': 'Professional animated explainer videos — 2D Animation, AI Video & Premium. From $497. 500+ videos for 56+ industries since 2015. Money-back guarantee.',
 'body': '''
 <section class="hero">
 <div class="wrap">
@@ -75,7 +75,7 @@ P['index.html'] = {
 <div class="wrap">
 <div class="sec-hdr tc"><p class="label">Services</p><h2 class="h2">The right video for every need</h2><p class="sub mx-a" style="margin-top:16px">Professional video production for every budget and timeline.</p></div>
 <div class="svc-grid">
-    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days, not weeks. Perfect for social media campaigns, ads, and volume production at a fraction of the cost.</p><div class="svc-price">from $197 <small>/ 30 sec</small></div></div>
+    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days, not weeks. Perfect for social media campaigns, ads, and volume production at a fraction of the cost.</p><div class="svc-price">from $497 <small>/ 30 sec</small></div></div>
     <div class="svc-card"><div class="svc-icon">🎬</div><h3>2D Animation</h3><p>Our most popular service since 2015. Hand-crafted custom 2D animation with professional scriptwriting, voiceover, and unlimited revisions. The standard choice.</p><div class="svc-price">from $797 <small>/ 30 sec</small></div></div>
     <div class="svc-card"><div class="svc-icon">🏆</div><h3>Premium / Custom</h3><p>Exclusive production for demanding clients. Senior team, cinematic quality, fully customized. The same level we've created for Fortune 500 companies and agencies.</p><div class="svc-price">Quote on Request</div></div>
 </div>
@@ -141,7 +141,7 @@ P['index.html'] = {
 
 P['pricing/index.html'] = {
 'title': 'Pricing | ExpansionVideos — Simple, Transparent Pricing',
-'desc': 'Simple pricing for animated explainer videos. From $197. Everything included: script, voiceover, music, animation. No hidden fees.',
+'desc': 'Simple pricing for animated explainer videos. From $497. Everything included: script, voiceover, music, animation. No hidden fees.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
 <div class="wrap"><div class="hero-text" style="max-width:100%">
@@ -153,7 +153,7 @@ P['pricing/index.html'] = {
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">$497 <small>/30s</small></div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
     <div class="price-card pop"><div class="price-dur">🎬 2D Animation</div><div class="price-amt">$797 <small>/30s</small></div><div class="price-desc">Our most popular. Hand-crafted custom design for most businesses.</div><ul class="price-list"><li>Custom 2D animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Unlimited revisions</li><li>3–4 weeks delivery</li><li>All formats included</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
     <div class="price-card"><div class="price-dur">🏆 Premium / Custom</div><div class="price-amt">Request Quote</div><div class="price-desc">Exclusive quality for demanding projects. Senior team. Cinematic.</div><ul class="price-list"><li>Fully custom production</li><li>Senior animator & team</li><li>Premium voiceover & music</li><li>Unlimited revisions</li><li>Priority delivery</li><li>Dedicated project lead</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
 </div>
@@ -174,31 +174,31 @@ P['pricing/index.html'] = {
 <tbody>
 <tr style="border-bottom:1px solid #e5e5e5">
 <td style="padding:16px 24px;font-weight:600">30 seconds</td>
-<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$197</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$497</td>
 <td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$797</td>
 <td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
 </tr>
 <tr style="border-bottom:1px solid #e5e5e5;background:#fafafa">
 <td style="padding:16px 24px;font-weight:600">60 seconds</td>
-<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$397</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$697</td>
 <td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$1,397</td>
 <td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
 </tr>
 <tr style="border-bottom:1px solid #e5e5e5">
 <td style="padding:16px 24px;font-weight:600">90 seconds</td>
-<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$597</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$897</td>
 <td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$1,997</td>
 <td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
 </tr>
 <tr style="border-bottom:1px solid #e5e5e5;background:#fafafa">
 <td style="padding:16px 24px;font-weight:600">2 minutes</td>
-<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$797</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$1,197</td>
 <td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$2,597</td>
 <td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
 </tr>
 <tr style="border-bottom:1px solid #e5e5e5">
 <td style="padding:16px 24px;font-weight:600">3 minutes</td>
-<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$1,197</td>
+<td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700">$1,697</td>
 <td style="padding:16px 24px;text-align:center;color:#0057b8;font-weight:700;background:#f0f5ff">$3,797</td>
 <td style="padding:16px 24px;text-align:center;color:#525252">Quote</td>
 </tr>
@@ -234,7 +234,7 @@ P['pricing/index.html'] = {
 
 P['services/index.html'] = {
 'title': 'Services | 2D Animation, AI Video & Premium — ExpansionVideos',
-'desc': '2D Animation, AI Video and Premium/Custom video production. From $197. Professional explainer video production since 2015.',
+'desc': '2D Animation, AI Video and Premium/Custom video production. From $497. Professional explainer video production since 2015.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
 <div class="wrap"><div class="hero-text" style="max-width:100%">
@@ -246,7 +246,7 @@ P['services/index.html'] = {
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
 <div class="svc-grid">
-    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by cutting-edge AI. Delivered in days. Perfect for social media, ad campaigns, and volume production. Cost-effective and flexible.</p><div class="svc-price">from $197 <small>· 5–7 days</small></div></div>
+    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by cutting-edge AI. Delivered in days. Perfect for social media, ad campaigns, and volume production. Cost-effective and flexible.</p><div class="svc-price">from $497 <small>· 5–7 days</small></div></div>
     <div class="svc-card"><div class="svc-icon">🎬</div><h3>2D Animation</h3><p>Our flagship since 2015. Custom 2D animation with professional scriptwriting, voiceover, and unlimited revisions. Perfect for product launches, SaaS demos, and brand stories.</p><div class="svc-price">from $797 <small>· 3–4 weeks</small></div></div>
     <div class="svc-card"><div class="svc-icon">🏆</div><h3>Premium / Custom</h3><p>Exclusive cinematic production for demanding clients. Senior team, fully customized, unlimited revisions. For Fortune 500 companies, agencies, and complex projects.</p><div class="svc-price">Quote on Request</div></div>
 </div>
@@ -259,14 +259,14 @@ P['services/index.html'] = {
 '''}
 
 P['ai-video/index.html'] = {
-'title': 'AI Video Production | Professional Videos from $197',
-'desc': 'AI-powered video production from $197/30 seconds. Professional quality in 5-7 days. Perfect for social media, ads, and explainers.',
+'title': 'AI Video Production | Professional Videos from $497',
+'desc': 'AI-powered video production from $497/30 seconds. Professional quality in 5-7 days. Perfect for social media, ads, and explainers.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
 <div class="wrap"><div class="hero-text" style="max-width:100%">
     <p class="label">AI Video Production</p>
     <h1 class="h1">Professional videos at a <span class="blue">fraction</span> of the cost</h1>
-    <p class="sub">AI-powered video production. Stunning quality, delivered in days. Starting at just $197.</p>
+    <p class="sub">AI-powered video production. Stunning quality, delivered in days. Starting at just $497.</p>
     <div class="hero-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div>
 </div></div></section>
 
@@ -275,7 +275,7 @@ P['ai-video/index.html'] = {
 <div class="sec-hdr tc"><h2 class="h2">Why AI Video?</h2></div>
 <div class="guar-grid">
     <div class="guar-card"><div class="g-icon">⚡</div><h4>Lightning Fast</h4><p>Delivered in 5–7 business days. Perfect for tight deadlines and urgent campaigns.</p></div>
-    <div class="guar-card"><div class="g-icon">💰</div><h4>Budget-Friendly</h4><p>Starting at $197/30s — up to 75% less than traditional animation.</p></div>
+    <div class="guar-card"><div class="g-icon">💰</div><h4>Budget-Friendly</h4><p>Starting at $497/30s — up to 75% less than traditional animation.</p></div>
     <div class="guar-card"><div class="g-icon">📈</div><h4>Scales Easily</h4><p>Need 10 videos for different products? AI makes volume production affordable.</p></div>
 </div>
 </div></section>
@@ -283,9 +283,9 @@ P['ai-video/index.html'] = {
 <section class="sec sec-gray">
 <div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">Basic</div><div class="price-amt">$197 <small>/30s</small></div><div class="price-desc">Template AI visuals. Perfect for ads and social media.</div><ul class="price-list"><li>AI-generated scenes</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
-    <div class="price-card pop"><div class="price-dur">Professional</div><div class="price-amt">$397 <small>/30s</small></div><div class="price-desc">Custom AI animation. Best value for most projects.</div><ul class="price-list"><li>Custom AI animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Custom music</li><li>2 revision rounds</li><li>7 business days</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
-    <div class="price-card"><div class="price-dur">Premium</div><div class="price-amt">$597 <small>/30s</small></div><div class="price-desc">Cinematic AI. Unlimited revisions. Priority delivery.</div><ul class="price-list"><li>Cinematic AI animation</li><li>Senior scriptwriter</li><li>Celebrity-style voiceover</li><li>Original music</li><li>Unlimited revisions</li><li>5 day priority</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card"><div class="price-dur">Basic</div><div class="price-amt">$497 <small>/30s</small></div><div class="price-desc">Template AI visuals. Perfect for ads and social media.</div><ul class="price-list"><li>AI-generated scenes</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="/order/ai-video/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card pop"><div class="price-dur">Professional</div><div class="price-amt">$697 <small>/30s</small></div><div class="price-desc">Custom AI animation. Best value for most projects.</div><ul class="price-list"><li>Custom AI animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Custom music</li><li>2 revision rounds</li><li>7 business days</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
+    <div class="price-card"><div class="price-dur">Premium</div><div class="price-amt">$897 <small>/30s</small></div><div class="price-desc">Cinematic AI. Unlimited revisions. Priority delivery.</div><ul class="price-list"><li>Cinematic AI animation</li><li>Senior scriptwriter</li><li>Celebrity-style voiceover</li><li>Original music</li><li>Unlimited revisions</li><li>5 day priority</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Get Started →</a></div>
 </div>
 </div></section>
 
@@ -381,7 +381,7 @@ P['thank-you/index.html'] = {
 
 # ── Order pages ────────────────────────────────────────────────
 P['order/ai-video/index.html'] = {
-'title': 'Order AI Video | From $197 — ExpansionVideos',
+'title': 'Order AI Video | From $497 — ExpansionVideos',
 'desc': 'Order your AI Video. Choose your length and get started.',
 'body': """
 <section class="hero" style="padding-top:120px;padding-bottom:40px">
@@ -398,10 +398,10 @@ P['order/ai-video/index.html'] = {
 <div>
 <h3 style="font-family:var(--font-h);font-weight:800;margin-bottom:24px">Pricing summary</h3>
 <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:16px;overflow:hidden">
-<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">30 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$197</div></div>
-<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200);background:rgba(37,99,235,0.04)"><div style="font-weight:700;margin-bottom:4px">60 seconds <span style="background:var(--blue);color:white;padding:2px 10px;border-radius:100px;font-size:11px;margin-left:8px">POPULAR</span></div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$397</div></div>
-<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">90 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$597</div></div>
-<div style="padding:20px 24px"><div style="font-weight:700;margin-bottom:4px">2 minutes</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$797</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">30 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$497</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200);background:rgba(37,99,235,0.04)"><div style="font-weight:700;margin-bottom:4px">60 seconds <span style="background:var(--blue);color:white;padding:2px 10px;border-radius:100px;font-size:11px;margin-left:8px">POPULAR</span></div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$697</div></div>
+<div style="padding:20px 24px;border-bottom:1px solid var(--gray-200)"><div style="font-weight:700;margin-bottom:4px">90 seconds</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$897</div></div>
+<div style="padding:20px 24px"><div style="font-weight:700;margin-bottom:4px">2 minutes</div><div style="color:var(--blue);font-size:1.4rem;font-weight:800">$1,197</div></div>
 </div>
 <div style="margin-top:24px;background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.15);border-radius:12px;padding:20px">
 <h4 style="font-family:var(--font-h);font-weight:700;margin-bottom:12px">All packages include:</h4>
@@ -415,7 +415,7 @@ P['order/ai-video/index.html'] = {
 <div class="fg"><label>YOUR NAME</label><input type="text" name="name" placeholder="Full name" required></div>
 <div class="fg"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required></div>
 <div class="fg"><label>COMPANY / BRAND</label><input type="text" name="company" placeholder="Optional"></div>
-<div class="fg"><label>VIDEO LENGTH</label><select name="length" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>30 seconds &mdash; $197</option><option selected>60 seconds &mdash; $397 (most popular)</option><option>90 seconds &mdash; $597</option><option>2 minutes &mdash; $797</option><option>3 minutes &mdash; $1,197</option></select></div>
+<div class="fg"><label>VIDEO LENGTH</label><select name="length" style="width:100%;padding:14px 18px;border:2px solid var(--gray-200);border-radius:12px;font-size:15px;background:white"><option>30 seconds &mdash; $497</option><option selected>60 seconds &mdash; $697 (most popular)</option><option>90 seconds &mdash; $897</option><option>2 minutes &mdash; $1,197</option><option>3 minutes &mdash; $1,697</option></select></div>
 <div class="fg"><label>VIDEO LANGUAGE</label><input type="text" name="language" placeholder="English" value="English"></div>
 <div class="fg"><label>YOUR WEBSITE (OPTIONAL)</label><input type="text" name="website" placeholder="https://yoursite.com"></div>
 <div class="fg"><label>TELL US ABOUT YOUR PRODUCT/SERVICE</label><textarea name="message" placeholder="What does your company do? Who is your target audience? What is the goal of the video?" required></textarea></div>
