@@ -618,3 +618,36 @@ _css_dst = os.path.join(SITE, 'css', 'style.css')
 os.makedirs(os.path.dirname(_css_dst), exist_ok=True)
 shutil.copyfile(_css_src, _css_dst)
 print(f'css emitted: css/style.css ({os.path.getsize(_css_dst):,} bytes)')
+
+# --- robots.txt: welcome all crawlers (including AI search engines) + sitemap ---
+_robots = """# ExpansionVideos - all crawlers welcome, including AI search engines.
+User-agent: *
+Allow: /
+
+Sitemap: https://expansionvideos.com/sitemap.xml
+"""
+with open(os.path.join(SITE, 'robots.txt'), 'w', encoding='utf-8') as _f:
+    _f.write(_robots)
+print('robots.txt written')
+
+# --- sitemap.xml: primary indexable pages (exclude thank-you + brief funnels) ---
+_today = time.strftime('%Y-%m-%d')
+_exclude = ('thank-you', 'brief')
+_urls = []
+for _k in P.keys():
+    if any(_x in _k for _x in _exclude):
+        continue
+    _path = '/' if _k == 'index.html' else '/' + _k.replace('index.html', '')
+    _urls.append(_path)
+_urls = sorted(set(_urls), key=lambda p: (p != '/', p))
+_rows = ''.join(
+    f'  <url><loc>https://expansionvideos.com{u}</loc><lastmod>{_today}</lastmod>'
+    f'<changefreq>{"weekly" if u == "/" else "monthly"}</changefreq>'
+    f'<priority>{"1.0" if u == "/" else "0.8"}</priority></url>\n' for u in _urls
+)
+_sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f'{_rows}</urlset>\n')
+with open(os.path.join(SITE, 'sitemap.xml'), 'w', encoding='utf-8') as _f:
+    _f.write(_sitemap)
+print(f'sitemap.xml written ({len(_urls)} urls)')
