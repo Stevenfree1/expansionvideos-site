@@ -7,12 +7,21 @@ SITE = os.path.join(os.path.dirname(__file__), 'site')
 HEAD = '''<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><link rel="canonical" href="https://expansionvideos.com/"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><link rel="canonical" href="{url}"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/img/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ExpansionVideos">
+<meta property="og:url" content="{url}">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
 <meta property="og:image" content="https://expansionvideos.com/img/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://expansionvideos.com/img/logo.png">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos for 56+ industries since 2015.","foundingDate":"2015","email":"studio@expansionvideos.com","address":{{"@type":"PostalAddress","addressLocality":"Sheridan","addressRegion":"WY","addressCountry":"US"}},"areaServed":"Worldwide","knowsLanguage":["en","es","fr","de","sv"],"sameAs":["https://www.instagram.com/expansionvideos/","https://www.linkedin.com/company/expansionvideos/","https://www.tiktok.com/@expansionvideos","https://www.youtube.com/@Expansionvideos"]}}</script>
 {schema}
 </head>
@@ -586,7 +595,8 @@ BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
     os.makedirs(os.path.dirname(fp), exist_ok=True)
-    html = HEAD.format(title=pg['title'], desc=pg['desc'], schema=pg.get('schema', '')) + pg['body'] + FOOT
+    _url = 'https://expansionvideos.com/' + ('' if fn == 'index.html' else fn.replace('index.html', ''))
+    html = HEAD.format(title=pg['title'], desc=pg['desc'], schema=pg.get('schema', ''), url=_url) + pg['body'] + FOOT
     html = html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
     with open(fp, 'w', encoding='utf-8') as f:
         f.write(html)
@@ -617,7 +627,8 @@ for _fn in ['thank-you/index.html']:
         _pg = P[_fn]
         _fp = os.path.join(SITE, _fn)
         os.makedirs(os.path.dirname(_fp), exist_ok=True)
-        _html = HEAD.format(title=_pg['title'], desc=_pg['desc'], schema=_pg.get('schema', '')) + _pg['body'] + FOOT
+        _url = 'https://expansionvideos.com/' + ('' if _fn == 'index.html' else _fn.replace('index.html', ''))
+        _html = HEAD.format(title=_pg['title'], desc=_pg['desc'], schema=_pg.get('schema', ''), url=_url) + _pg['body'] + FOOT
         _html = _html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
         with open(_fp, 'w', encoding='utf-8') as _f:
             _f.write(_html)
@@ -662,3 +673,32 @@ _sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
 with open(os.path.join(SITE, 'sitemap.xml'), 'w', encoding='utf-8') as _f:
     _f.write(_sitemap)
 print(f'sitemap.xml written ({len(_urls)} urls)')
+
+# --- llms.txt: concise, structured summary for AI readers (llmstxt.org convention) ---
+_llms = """# ExpansionVideos
+
+> Animated explainer video production studio. 2D animation, AI video, and premium custom production. 500+ videos for 56+ industries since 2015. Serves clients worldwide. English-language.
+
+## Services
+- AI Video: AI-powered explainer videos from $497 per 30 seconds, delivered in 5-7 days. Best for social media, ads, and volume.
+- 2D Animation: hand-crafted custom 2D animation from $797 per 30 seconds. Most popular service since 2015. Includes scriptwriting, voiceover, and unlimited revisions.
+- Premium / Custom: cinematic, fully customized production for demanding clients. Quote on request.
+
+## What's included
+Script, professional voiceover, music, animation, HD delivery, and revisions. Money-back guarantee. Available in English, Spanish, French, German, Swedish, and 20+ more languages.
+
+## Pages
+- Home: https://expansionvideos.com/
+- Services: https://expansionvideos.com/services/
+- AI Video: https://expansionvideos.com/ai-video/
+- Pricing: https://expansionvideos.com/pricing/
+- Contact: https://expansionvideos.com/contact/
+
+## Contact
+- Email: studio@expansionvideos.com
+- Book a call: https://calendly.com/mikael-hamrin/30min
+- Company: Villadose LLC, Sheridan, Wyoming, USA
+"""
+with open(os.path.join(SITE, 'llms.txt'), 'w', encoding='utf-8') as _f:
+    _f.write(_llms)
+print('llms.txt written')
