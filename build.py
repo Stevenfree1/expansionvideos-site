@@ -13,7 +13,8 @@ HEAD = '''<!DOCTYPE html>
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/img/favicon.png" type="image/png">
 <meta property="og:image" content="https://expansionvideos.com/img/logo.png">
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos since 2015."}}</script>
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos for 56+ industries since 2015.","foundingDate":"2015","email":"studio@expansionvideos.com","address":{{"@type":"PostalAddress","addressLocality":"Sheridan","addressRegion":"WY","addressCountry":"US"}},"areaServed":"Worldwide","knowsLanguage":["en","es","fr","de","sv"],"sameAs":["https://www.instagram.com/expansionvideos/","https://www.linkedin.com/company/expansionvideos/","https://www.tiktok.com/@expansionvideos","https://www.youtube.com/@Expansionvideos"]}}</script>
+{schema}
 </head>
 <body>
 <header class="hdr"><div class="wrap">
@@ -571,11 +572,21 @@ P['order/ai-video/brief/index.html']=_ev_brief('AI Video','ai-video',_EVL)
 P['order/2d-animation/brief/index.html']=_ev_brief('2D Animation','2d-animation',_EVL)
 
 
+# --- Per-page structured data (JSON-LD): reviews, offers, FAQ, service ---
+P['index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"3","bestRating":"5"},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Organization","name":"Toyota"},"reviewBody":"ExpansionVideos delivered an outstanding explainer video that perfectly captured our brand message. Professional, responsive, and creative."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Organization","name":"Deloitte"},"reviewBody":"Working with ExpansionVideos was seamless from start to finish. They understood our complex product and made it simple and engaging."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Organization","name":"WSO2"},"reviewBody":"Incredible value for money. The AI video option gave us a professional result at a price point we didn't think was possible."}]}</script>'''
+
+P['services/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","makesOffer":[{"@type":"Offer","priceCurrency":"USD","price":"497","itemOffered":{"@type":"Service","name":"AI Video","description":"AI-powered explainer videos from $497 per 30 seconds."}},{"@type":"Offer","priceCurrency":"USD","price":"797","itemOffered":{"@type":"Service","name":"2D Animation","description":"Hand-crafted custom 2D animation from $797 per 30 seconds."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Premium / Custom Video Production","description":"Cinematic, fully customized production. Quote on request."}}]}</script>'''
+
+P['ai-video/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"AI Video Production","serviceType":"AI-generated explainer video production","provider":{"@id":"https://expansionvideos.com/#org"},"areaServed":"Worldwide","description":"AI-powered explainer video production from $497 per 30 seconds, delivered in 5-7 days. Includes professional voiceover, music, and HD delivery.","offers":{"@type":"Offer","price":"497","priceCurrency":"USD","url":"https://expansionvideos.com/order/ai-video/","availability":"https://schema.org/InStock"}}</script>'''
+
+P['pricing/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What's included?","acceptedAnswer":{"@type":"Answer","text":"Everything: script, voiceover, music, animation, HD delivery, and revisions."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"AI Video: 5-7 days. Animated: 3-4 weeks. Premium: priority delivery."}},{"@type":"Question","name":"Do you offer a money-back guarantee?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you're not satisfied after revisions, we offer a full refund."}},{"@type":"Question","name":"What languages do you support?","acceptedAnswer":{"@type":"Answer","text":"English, Spanish, French, German, Swedish, and 20+ more languages."}}]}</script>'''
+
+
 BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
     os.makedirs(os.path.dirname(fp), exist_ok=True)
-    html = HEAD.format(title=pg['title'], desc=pg['desc']) + pg['body'] + FOOT
+    html = HEAD.format(title=pg['title'], desc=pg['desc'], schema=pg.get('schema', '')) + pg['body'] + FOOT
     html = html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
     with open(fp, 'w', encoding='utf-8') as f:
         f.write(html)
@@ -606,7 +617,7 @@ for _fn in ['thank-you/index.html']:
         _pg = P[_fn]
         _fp = os.path.join(SITE, _fn)
         os.makedirs(os.path.dirname(_fp), exist_ok=True)
-        _html = HEAD.format(title=_pg['title'], desc=_pg['desc']) + _pg['body'] + FOOT
+        _html = HEAD.format(title=_pg['title'], desc=_pg['desc'], schema=_pg.get('schema', '')) + _pg['body'] + FOOT
         _html = _html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
         with open(_fp, 'w', encoding='utf-8') as _f:
             _f.write(_html)
