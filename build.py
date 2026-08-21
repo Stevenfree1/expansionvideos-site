@@ -598,3 +598,23 @@ P['thank-you/index.html'] = {
 </div>
 </section>
 '''}
+
+# --- Post-loop emit: pages added after the main write loop (e.g. thank-you) ---
+import shutil
+for _fn in ['thank-you/index.html']:
+    if _fn in P:
+        _pg = P[_fn]
+        _fp = os.path.join(SITE, _fn)
+        os.makedirs(os.path.dirname(_fp), exist_ok=True)
+        _html = HEAD.format(title=_pg['title'], desc=_pg['desc']) + _pg['body'] + FOOT
+        _html = _html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
+        with open(_fp, 'w', encoding='utf-8') as _f:
+            _f.write(_html)
+        print(f'thank-you emitted: {_fn} ({len(_html):,} bytes)')
+
+# --- Emit stylesheet: every page links /css/style.css, so copy it into the build ---
+_css_src = os.path.join(os.path.dirname(__file__), 'style.css')
+_css_dst = os.path.join(SITE, 'css', 'style.css')
+os.makedirs(os.path.dirname(_css_dst), exist_ok=True)
+shutil.copyfile(_css_src, _css_dst)
+print(f'css emitted: css/style.css ({os.path.getsize(_css_dst):,} bytes)')
