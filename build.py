@@ -29,7 +29,7 @@ HEAD = '''<!DOCTYPE html>
 <header class="hdr"><div class="wrap">
 <a href="/" class="hdr-logo"><img src="/img/logo.png" alt="ExpansionVideos" class="hdr-logo-img"></a>
 <button class="hdr-toggle" onclick="document.querySelector('.hdr-nav').classList.toggle('open')" aria-label="Menu">☰</button>
-<nav class="hdr-nav"><a href="/services/">Services</a><a href="/ai-video/">AI Video</a><a href="/pricing/">Pricing</a><a href="/contact/">Contact</a><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-sm">Book a Call →</a></nav>
+<nav class="hdr-nav"><a href="/services/">Services</a><a href="/ai-video/">AI Video</a><a href="/case-studies/">Case Studies</a><a href="/pricing/">Pricing</a><a href="/contact/">Contact</a><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-sm">Book a Call →</a></nav>
 </div></header>
 '''
 
@@ -37,7 +37,7 @@ FOOT = '''
 <footer class="ftr"><div class="wrap">
 <div class="ftr-grid">
 <div class="ftr-col"><h4>ExpansionVideos</h4><p>Since 2015, we've helped 500+ businesses worldwide tell their stories through professional animated video. Trusted by brands across 56+ industries.</p><p style="margin-top:16px"><a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a></p></div>
-<div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
+<div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/case-studies/">Case Studies</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
 <div class="ftr-col"><h4>Get Started</h4><p><a href="https://calendly.com/mikael-hamrin/30min">Book a Free Call →</a></p><p style="margin-top:16px">Villadose LLC<br>Sheridan, Wyoming</p></div>
 </div>
 <div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos — Villadose LLC</div>
@@ -133,8 +133,8 @@ P['index.html'] = {
 <div class="wrap">
 <div class="sec-hdr tc"><p class="label">Testimonials</p><h2 class="h2">Trusted by 500+ businesses</h2><p class="sub mx-a" style="margin-top:12px">4.9 out of 5 from 44 verified client reviews.</p></div>
 <div class="port-grid" style="margin-bottom:36px">
-    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/bGZQOh2397g?rel=0&autoplay=1\' title=\'Moran Pober testimonial\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/bGZQOh2397g/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge prem">▶ Video review</span><h4>Moran Pober</h4><p>Founder, Acquisitions.com</p></div></div>
-    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/42EJQ_4LkmI?rel=0&autoplay=1\' title=\'Gun Hudson testimonial\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/42EJQ_4LkmI/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge prem">▶ Video review</span><h4>Gun Hudson</h4><p>Founder, Global Tax Freedom</p></div></div>
+    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/bGZQOh2397g?rel=0&autoplay=1\' title=\'Moran Pober testimonial\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/bGZQOh2397g/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge prem">▶ Video review</span><h4>Moran Pober</h4><p>Founder, Acquisitions.com</p><p style="margin-top:8px;font-style:italic">"Video is converting the best of any sales process I've tried. Working with Expansionvideos was a pleasure, smooth process, amazing quality, and the results we wanted. Compared to the results you get, you don't even need to think about the price."</p></div></div>
+    <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/42EJQ_4LkmI?rel=0&autoplay=1\' title=\'Gun Hudson testimonial\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/42EJQ_4LkmI/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge prem">▶ Video review</span><h4>Gun Hudson</h4><p>Founder, Global Tax Freedom</p><p style="margin-top:8px;font-style:italic">"I had concepts my clients needed to understand or they wouldn't buy. Expansionvideos guided me through the whole process and even helped shape what to say. Since using the video, our customer support time has gone down and our sales have gone up. It was a no-brainer."</p></div></div>
 </div>
 <div class="test-grid">
     <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Together with Expansionvideos, we managed to package a complex topic into a great video."</div><div class="test-author">Maren Buchmüller</div><div class="test-role">COS Systems</div></div>
@@ -588,6 +588,61 @@ P['order/ai-video/brief/index.html']=_ev_brief('AI Video','ai-video',_EVL)
 P['order/2d-animation/brief/index.html']=_ev_brief('2D Animation','2d-animation',_EVL)
 
 
+P['case-studies/index.html'] = {
+'title': 'Case Studies | Explainer Video Results — ExpansionVideos',
+'desc': 'Real explainer video case studies from ExpansionVideos: the challenge, our solution, and the results, including a launch that drew 1,200 first-week viewers and a video with 3M+ views.',
+'body': '''
+<section class="hero" style="min-height:auto;padding-bottom:0">
+<div class="wrap">
+<div class="hero-text" style="max-width:760px;margin:0 auto;text-align:center">
+    <p class="label">Case Studies</p>
+    <h1 class="h1">Explainer videos that did the job</h1>
+    <p class="sub">Real projects, real goals, real outcomes. Here is the challenge each client faced, what we made, and what happened next.</p>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="sec-hdr"><p class="label">Fintech</p><h2 class="h2">366 Security and Compliance</h2></div>
+<p class="sub"><strong>Challenge.</strong> 366 wanted to clearly show the benefits of their Payment Hub and move prospects further along the buying journey. The hard part was visualizing complex payment flows in simple words.</p>
+<p class="sub"><strong>Solution.</strong> We produced a subtitled explainer that shows how the Payment Hub routes payments across acquirers by cost and availability, built for fintech, e-commerce, and hospitality buyers.</p>
+<p class="sub"><strong>Channels.</strong> YouTube, website, and Instagram.</p>
+<p class="sub"><strong>Result.</strong> "We are extremely satisfied with how the entire project was handled, everything from information gathering to production." The team is planning more videos for other parts of the business.</p>
+<div style="max-width:720px;margin:24px auto 0"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/o_eILbXW3N8?rel=0&autoplay=1\' title=\'366 Security and Compliance explainer\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/o_eILbXW3N8/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div></div>
+</div></section>
+
+<section class="sec sec-gray">
+<div class="wrap">
+<div class="sec-hdr"><p class="label">SaaS / Data</p><h2 class="h2">LEANalyser</h2></div>
+<p class="sub"><strong>Challenge.</strong> LEANalyser needed people to actually try their tool. That meant explaining, fast, that one product finally lets a part-time analyst run data analysis without help and without juggling several tools.</p>
+<p class="sub"><strong>Solution.</strong> We built a video that works like a virtual salesperson. It shows the full functionality a pro needs, aimed at business-savvy people who are not IT professionals.</p>
+<p class="sub"><strong>Channels.</strong> LinkedIn, Mailchimp, and email.</p>
+<p class="sub"><strong>Result.</strong> A LinkedIn launch brought about 1,200 viewers in the first week, strong for a brand-new product from a new company.</p>
+<div style="max-width:720px;margin:24px auto 0"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/8ELXaZIt3-Y?rel=0&autoplay=1\' title=\'LEANalyser explainer\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/8ELXaZIt3-Y/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div></div>
+</div></section>
+
+<section class="sec">
+<div class="wrap">
+<div class="sec-hdr"><p class="label">E-commerce</p><h2 class="h2">Tailor Store</h2></div>
+<p class="sub"><strong>Challenge.</strong> Tailor Store needed to explain why custom-fit shirts beat ill-fitting standard sizes, and re-engage people who visited the site but did not buy.</p>
+<p class="sub"><strong>Solution.</strong> We created an explainer that positions Tailor Store as the new way to buy shirts, then used it for YouTube remarketing to bring visitors back.</p>
+<p class="sub"><strong>Channels.</strong> YouTube.</p>
+<div class="stats" style="margin-top:24px;border-radius:16px"><div class="wrap"><div class="stats-item"><h3>3M+</h3><p>Views on YouTube</p></div><div class="stats-item"><h3>"You did very well"</h3><p>Tailor Store</p></div></div></div>
+</div></section>
+
+<section class="cta">
+<div class="wrap">
+    <p class="label">Your project next</p>
+    <h2 class="h2">Ready to create your video?</h2>
+    <p class="sub">Book a free call and we'll map out the video that fits your goal.</p>
+    <div class="cta-btns">
+        <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a>
+        <a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a>
+    </div>
+</div></section>
+'''}
+
 # --- Per-page structured data (JSON-LD): reviews, offers, FAQ, service ---
 P['index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"44","bestRating":"5"},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Maren Buchmüller"},"reviewBody":"Together with Expansionvideos, we managed to package a complex topic into a great video."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Amit Joshi"},"reviewBody":"The team at Expansionvideos were fast, efficient and gave me advice throughout."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Vidyas"},"reviewBody":"Communication was smooth, with a proper understanding of our needs and good execution."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Stefan Konyi"},"reviewBody":"Simple and smooth process. Responsive to changes. Highly recommend."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Caroline Lindblad"},"reviewBody":"Incredibly easy to work with, even with considerable input. Easy all the way!"},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Peter Ahlgren"},"reviewBody":"Impressed by the result. Good service, fast delivery, excellent outcome."}]}</script>'''
 
@@ -698,6 +753,7 @@ Script, professional voiceover, music, animation, HD delivery, and revisions. Mo
 - Home: https://expansionvideos.com/
 - Services: https://expansionvideos.com/services/
 - AI Video: https://expansionvideos.com/ai-video/
+- Case Studies: https://expansionvideos.com/case-studies/
 - Pricing: https://expansionvideos.com/pricing/
 - Contact: https://expansionvideos.com/contact/
 
