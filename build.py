@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ExpansionVideos.com — Premium Build"""
+"""ExpansionVideos.com, Premium Build"""
 import os
 import time
 SITE = os.path.join(os.path.dirname(__file__), 'site')
@@ -40,15 +40,15 @@ FOOT = '''
 <div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/case-studies/">Case Studies</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
 <div class="ftr-col"><h4>Get Started</h4><p><a href="https://calendly.com/mikael-hamrin/30min">Book a Free Call →</a></p><p style="margin-top:16px">Villadose LLC<br>Sheridan, Wyoming</p></div>
 </div>
-<div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos — Villadose LLC</div>
+<div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos, Villadose LLC</div>
 </div></footer>
 </body></html>'''
 
 P = {}
 
 P['index.html'] = {
-'title': '2D Animation, AI Video & Premium — ExpansionVideos',
-'desc': 'Professional animated explainer videos — 2D Animation, AI Video & Premium. From $497. 500+ videos for 56+ industries since 2015. Money-back guarantee.',
+'title': '2D Animation, AI Video & Premium | ExpansionVideos',
+'desc': 'Professional animated explainer videos, 2D Animation, AI Video & Premium. From $497. 500+ videos for 56+ industries since 2015. Money-back guarantee.',
 'body': '''
 <section class="hero">
 <div class="wrap">
@@ -108,7 +108,7 @@ P['index.html'] = {
 <div class="sec-hdr tc">
     <p class="label">Portfolio</p>
     <h2 class="h2">See our work in action</h2>
-    <p class="sub mx-a" style="margin-top:16px">Examples from each format — AI Video, 2D Animation and Premium.</p>
+    <p class="sub mx-a" style="margin-top:16px">Examples from each format, AI Video, 2D Animation and Premium.</p>
 </div>
 <div class="port-grid">
     <div class="port-card"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/JC82Il2cjqA?rel=0&autoplay=1\' title=\'AI Video Example\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/JC82Il2cjqA/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div><div class="port-info"><span class="port-badge ai">🤖 AI Video</span><h4>Khan Academy</h4><p>AI-generated explainer in a clean animated style. Ideal for ads and social campaigns.</p></div></div>
@@ -150,7 +150,7 @@ P['index.html'] = {
 <div class="wrap">
     <p class="label">Get Started</p>
     <h2 class="h2">Ready to create your video?</h2>
-    <p class="sub">Book a free consultation. We'll discuss your project and give you a quote — no obligations.</p>
+    <p class="sub">Book a free consultation. We'll discuss your project and give you a quote, no obligations.</p>
     <div class="cta-btns">
         <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a>
         <a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a>
@@ -159,7 +159,7 @@ P['index.html'] = {
 '''}
 
 P['pricing/index.html'] = {
-'title': 'Pricing | ExpansionVideos — Simple, Transparent Pricing',
+'title': 'Pricing | Simple, Transparent Pricing | ExpansionVideos',
 'desc': 'Simple pricing for animated explainer videos. From $497. Everything included: script, voiceover, music, animation. No hidden fees.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
@@ -240,7 +240,7 @@ P['pricing/index.html'] = {
 <div class="faq-grid">
     <div class="faq-card"><h4>What's included?</h4><p>Everything: script, voiceover, music, animation, HD delivery, and revisions.</p></div>
     <div class="faq-card"><h4>How long does it take?</h4><p>AI Video: 5–7 days. Animated: 3–4 weeks. Premium: priority delivery.</p></div>
-    <div class="faq-card"><h4>Money-back guarantee?</h4><p>Yes — if you're not satisfied after revisions, we offer a full refund.</p></div>
+    <div class="faq-card"><h4>Money-back guarantee?</h4><p>Yes, if you're not satisfied after revisions, we offer a full refund.</p></div>
     <div class="faq-card"><h4>What languages?</h4><p>English, Spanish, French, German, Swedish, and 20+ more languages.</p></div>
 </div>
 </div></section>
@@ -252,14 +252,14 @@ P['pricing/index.html'] = {
 '''}
 
 P['services/index.html'] = {
-'title': 'Services | 2D Animation, AI Video & Premium — ExpansionVideos',
+'title': 'Services | 2D Animation, AI Video & Premium | ExpansionVideos',
 'desc': '2D Animation, AI Video and Premium/Custom video production. From $497. Professional explainer video production since 2015.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
 <div class="wrap"><div class="hero-text" style="max-width:100%">
     <p class="label">Services</p>
     <h1 class="h1">The right video for <span class="blue">every need</span></h1>
-    <p class="sub">From hand-crafted animation to AI-powered video — we have a solution for every budget and timeline.</p>
+    <p class="sub">From hand-crafted animation to AI-powered video, we have a solution for every budget and timeline.</p>
 </div></div></section>
 
 <section class="sec" style="padding-top:80px">
@@ -294,7 +294,7 @@ P['ai-video/index.html'] = {
 <div class="sec-hdr tc"><h2 class="h2">Why AI Video?</h2></div>
 <div class="guar-grid">
     <div class="guar-card"><div class="g-icon">⚡</div><h4>Lightning Fast</h4><p>Delivered in 5–7 business days. Perfect for tight deadlines and urgent campaigns.</p></div>
-    <div class="guar-card"><div class="g-icon">💰</div><h4>Budget-Friendly</h4><p>Starting at $497/30s — up to 75% less than traditional animation.</p></div>
+    <div class="guar-card"><div class="g-icon">💰</div><h4>Budget-Friendly</h4><p>Starting at $497/30s, up to 75% less than traditional animation.</p></div>
     <div class="guar-card"><div class="g-icon">📈</div><h4>Scales Easily</h4><p>Need 10 videos for different products? AI makes volume production affordable.</p></div>
 </div>
 </div></section>
@@ -315,7 +315,7 @@ P['ai-video/index.html'] = {
 '''}
 
 P['contact/index.html'] = {
-'title': 'Contact | ExpansionVideos — Get In Touch',
+'title': 'Contact | Get In Touch | ExpansionVideos',
 'desc': 'Contact ExpansionVideos: studio@expansionvideos.com. Book a free consultation via Calendly. We reply within 24 hours.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
@@ -400,7 +400,7 @@ P['thank-you/index.html'] = {
 
 # ── Order pages ────────────────────────────────────────────────
 P['order/ai-video/index.html'] = {
-'title': 'Order AI Video | From $497 — ExpansionVideos',
+'title': 'Order AI Video | From $497 | ExpansionVideos',
 'desc': 'Order your AI Video. Choose your length and get started.',
 'body': """
 <section class="hero" style="padding-top:120px;padding-bottom:40px">
@@ -457,7 +457,7 @@ fetch('https://leads.mikaelhamrin.com/leads',{method:'POST',headers:{'Content-Ty
 
 # SEED:jagnneqmpuogtycwqauitcyfqqiznozgvjfrwhjtzcwkelyhdyuzaxhvmbxwltng
 P['order/2d-animation/index.html'] = {
-'title': 'Order 2D Animation | From $797 — ExpansionVideos',
+'title': 'Order 2D Animation | From $797 | ExpansionVideos',
 'desc': 'Order your 2D Animation. Choose your length and get started.',
 'body': """
 <section class="hero" style="padding-top:120px;padding-bottom:40px">
@@ -589,7 +589,7 @@ P['order/2d-animation/brief/index.html']=_ev_brief('2D Animation','2d-animation'
 
 
 P['case-studies/index.html'] = {
-'title': 'Case Studies | Explainer Video Results — ExpansionVideos',
+'title': 'Case Studies | Explainer Video Results | ExpansionVideos',
 'desc': 'Real explainer video case studies from ExpansionVideos: the challenge, our solution, and the results, including a launch that drew 1,200 first-week viewers and a video with 3M+ views.',
 'body': '''
 <section class="hero" style="min-height:auto;padding-bottom:0">
@@ -765,3 +765,99 @@ Script, professional voiceover, music, animation, HD delivery, and revisions. Mo
 with open(os.path.join(SITE, 'llms.txt'), 'w', encoding='utf-8') as _f:
     _f.write(_llms)
 print('llms.txt written')
+
+
+# --- _headers: security headers + long cache for static assets ---
+_headers = """/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+"""
+with open(os.path.join(SITE, '_headers'), 'w', encoding='utf-8') as _f:
+    _f.write(_headers)
+print('_headers written')
+
+# --- _redirects: 301 old WordPress URLs to closest current page (specific first) ---
+_redirects = """# 301 redirects from old WordPress URLs to the current structure.
+# Specific rules first; first match wins.
+
+# Old service / landing pages
+/our-services/  /services/  301
+/explainer-video/  /services/  301
+/explainer_video/  /services/  301
+/explainervideo/*  /services/  301
+/animated-video/  /services/  301
+/company-animation/  /services/  301
+/commercial-video/  /services/  301
+/short-video/  /services/  301
+/it-tech/  /services/  301
+/process/  /services/  301
+/prices/  /pricing/  301
+/offer/  /pricing/  301
+/video-offer  /pricing/  301
+/order/  /pricing/  301
+/faq/  /pricing/  301
+/faqs/  /pricing/  301
+/book-call/  /contact/  301
+/project-form-video-brief/  /pricing/  301
+/form_thanks/  /thank-you/  301
+/portfolio/  /case-studies/  301
+/testimonials/  /case-studies/  301
+/about-us/  /  301
+/who-we-are  /  301
+/team-details-2/  /  301
+/privacy-policy/  /  301
+/terms-of-service/  /  301
+/become-reseller/  /  301
+/become-reseller-svenska/  /  301
+/en/home/  /  301
+/sv/hem/  /  301
+/sv/kontakta-oss/  /contact/  301
+
+# Old blog articles (no blog on current site)
+/10-new-things-in-video-marketing-2022-and-how-your-company-can-benefit-from-them/  /  301
+/10-reasons-why-video-is-key-to-marketing-success/  /  301
+/2021-year-of-animation-explainer-videos/  /  301
+/6-successful-marketing-strategies/  /  301
+/6-successful-social-media-strategies-and-why-they-worked/  /  301
+/7-best-animated-explainer-videos-of-2020/  /  301
+/advantages-of-explainer-videos/  /  301
+/best-animated-videos-for-2020/  /  301
+/branding-how-to-create-a-strong-brand/  /  301
+/how-to-create-exceptional-testimonial-animated-explainer-videos/  /  301
+/how-to-do-great-branding/  /  301
+/how-your-company-can-use-our-services/  /  301
+/the-advantages-of-using-animated-explainer-videos-for-your-company/  /  301
+/the-numbers-behind-investing-in-your-advertising/  /  301
+/top-10-explainer-video-marketing-disruptor-in-the-united-states/  /  301
+/top-6-explainer-video-trends-for-2020/  /  301
+/toyota-electric-and-hybrid-cars-animated-2d-video/  /case-studies/  301
+/video-format-essential-for-digital-marketing-strategy/  /  301
+/why-2021-will-be-the-year-of-animation-explainer-videos/  /  301
+/why-video-format-is-essential-for-your-companys-digital-marketing-strategy/  /  301
+
+# WordPress taxonomy, archives and project pages
+/category/*  /  301
+/author/*  /  301
+/tag/*  /  301
+/blog  /  301
+/blog/*  /  301
+/blog-old/*  /  301
+/2020/*  /  301
+/2021/*  /  301
+/2022/*  /  301
+/2023/*  /  301
+/project/*  /case-studies/  301
+/project-category/*  /case-studies/  301
+/service/*  /services/  301
+"""
+with open(os.path.join(SITE, '_redirects'), 'w', encoding='utf-8') as _f:
+    _f.write(_redirects)
+print(f'_redirects written ({_redirects.count(chr(10)+chr(47))} rules)')
