@@ -29,7 +29,7 @@ HEAD = '''<!DOCTYPE html>
 <header class="hdr"><div class="wrap">
 <a href="/" class="hdr-logo"><img src="/img/logo.png" alt="ExpansionVideos" class="hdr-logo-img"></a>
 <button class="hdr-toggle" onclick="document.querySelector('.hdr-nav').classList.toggle('open')" aria-label="Menu">☰</button>
-<nav class="hdr-nav"><a href="/services/">Services</a><a href="/ai-video/">AI Video</a><a href="/case-studies/">Case Studies</a><a href="/pricing/">Pricing</a><a href="/contact/">Contact</a><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-sm">Book a Call →</a></nav>
+<nav class="hdr-nav"><a href="/services/">Services</a><a href="/ai-video/">AI Video</a><a href="/case-studies/">Case Studies</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="/contact/">Contact</a><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-sm">Book a Call →</a></nav>
 </div></header>
 '''
 
@@ -37,7 +37,7 @@ FOOT = '''
 <footer class="ftr"><div class="wrap">
 <div class="ftr-grid">
 <div class="ftr-col"><h4>ExpansionVideos</h4><p>Since 2015, we've helped 500+ businesses worldwide tell their stories through professional animated video. Trusted by brands across 56+ industries.</p><p style="margin-top:16px"><a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a></p></div>
-<div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/case-studies/">Case Studies</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
+<div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/case-studies/">Case Studies</a></p><p><a href="/blog/">Blog</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
 <div class="ftr-col"><h4>Get Started</h4><p><a href="https://calendly.com/mikael-hamrin/30min">Book a Free Call →</a></p><p style="margin-top:16px">Villadose LLC<br>Sheridan, Wyoming</p></div>
 </div>
 <div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos, Villadose LLC</div>
@@ -815,6 +815,79 @@ P['whiteboard-animation/index.html'] = {
 '''}
 P['whiteboard-animation/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Whiteboard Animation Production","serviceType":"Whiteboard animation video production","provider":{"@id":"https://expansionvideos.com/#org"},"areaServed":"Worldwide","description":"Whiteboard animation video production that explains ideas with a clean hand-drawn style. Great for education, training and complex topics. From $797.","url":"https://expansionvideos.com/whiteboard-animation/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://expansionvideos.com/services/"},{"@type":"ListItem","position":3,"name":"Whiteboard Animation Production","item":"https://expansionvideos.com/whiteboard-animation/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is whiteboard animation?","acceptedAnswer":{"@type":"Answer","text":"Whiteboard animation is a video style where illustrations appear to be drawn by hand on a white background while a voiceover explains the idea. It is popular for education and complex topics."}},{"@type":"Question","name":"How much does whiteboard animation cost?","acceptedAnswer":{"@type":"Answer","text":"Whiteboard animation starts at $797 per 30 seconds, depending on length and complexity."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"Most whiteboard animation projects take 3 to 4 weeks from brief to delivery."}},{"@type":"Question","name":"Is whiteboard animation still effective?","acceptedAnswer":{"@type":"Answer","text":"Yes, when it fits the message. For clear step-by-step explanation and education it remains one of the most watchable formats."}}]}</script>'''
 
+P['blog/index.html'] = {
+'title': 'Blog | Video Marketing Guides | ExpansionVideos',
+'desc': 'Guides on explainer videos, animation and video marketing from ExpansionVideos.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label">Blog</p>
+    <h1 class="h1">Video marketing <span class="blue">guides</span></h1>
+    <p class="sub">Clear, practical guides on explainer videos, animation and video marketing.</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="blog-grid"><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-is-an-explainer-video/" style="color:inherit;text-decoration:none">What is an explainer video?</a></h3><p>What is an explainer video? A complete guide: what it is, when it works, how long it should be and what it costs, with examples.</p><a href="/blog/what-is-an-explainer-video/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-are-motion-graphics/" style="color:inherit;text-decoration:none">What are motion graphics?</a></h3><p>What are motion graphics? A clear explanation of animated graphics, when they fit, how they differ from animation, and what they cost.</p><a href="/blog/what-are-motion-graphics/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/2d-vs-3d-animation/" style="color:inherit;text-decoration:none">2D vs 3D animation: which should you choose?</a></h3><p>2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.</p><a href="/blog/2d-vs-3d-animation/" class="blog-link">Read more →</a></div></div></div>
+</div></section>
+'''}
+P['blog/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"ExpansionVideos Blog","description":"Guides on explainer videos, animation and video marketing.","url":"https://expansionvideos.com/blog/","publisher":{"@id":"https://expansionvideos.com/#org"}}</script>'''
+
+P['blog/what-is-an-explainer-video/index.html'] = {
+'title': 'What Is an Explainer Video? Guide, Examples and Pricing | ExpansionVideos',
+'desc': 'What is an explainer video? A complete guide: what it is, when it works, how long it should be and what it costs, with examples.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/blog/" style="color:var(--blue,#2563eb)">← Blog</a></p>
+    <h1 class="h1">What is an explainer video?</h1>
+    <p class="sub">October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>Explainer video, animated explainer, product explainer. Different names for the same thing: a short animated video, usually 60 to 90 seconds, that explains what a company does, why it matters and how a customer gets started. It often sits at the top of the homepage and is frequently the single most effective element on a website.</p><h2>When an explainer video is the right call</h2><p>An explainer video earns its keep when the message is abstract or hard to grasp in text. Think SaaS, fintech, technical services and anything where the customer needs to understand a concept before they will buy. If the product is simple and obvious, an image may be enough. If it is even slightly complex, showing it in motion pays off.</p><h2>How long should it be?</h2><p>Keep it short. 60 to 90 seconds is enough to explain the essentials without losing the viewer. For ads and social we cut down to 15 to 30 seconds. Length should follow the message and where the video will run, not the other way around.</p><h2>What is included</h2><ul><li>Script and storyboard</li><li>Professional voiceover</li><li>Custom animation and design</li><li>Music and sound effects</li><li>HD delivery for web, social and ads</li></ul><h2>What does an explainer video cost?</h2><p>Animated explainer video starts at $797 per 30 seconds, and AI video from $497. Price depends on length, scene count and number of languages. See the full breakdown on our <a href="/pricing/">pricing page</a>.</p><h2>Next steps</h2><p>Want to see what an explainer video could look like for you? Read more about our <a href="/explainer-video/">explainer video production</a>, or compare it with <a href="/motion-graphics/">motion graphics</a> and <a href="/product-video/">product video</a> if you are unsure about the format.</p>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Want to make a video?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
+'''}
+P['blog/what-is-an-explainer-video/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"What is an explainer video?","datePublished":"2026-10-03","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/what-is-an-explainer-video/"},"description":"What is an explainer video? A complete guide: what it is, when it works, how long it should be and what it costs, with examples.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/what-is-an-explainer-video/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"What is an explainer video?","item":"https://expansionvideos.com/blog/what-is-an-explainer-video/"}]}</script>'''
+
+P['blog/what-are-motion-graphics/index.html'] = {
+'title': 'What Are Motion Graphics? How Animated Graphics Work | ExpansionVideos',
+'desc': 'What are motion graphics? A clear explanation of animated graphics, when they fit, how they differ from animation, and what they cost.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/blog/" style="color:var(--blue,#2563eb)">← Blog</a></p>
+    <h1 class="h1">What are motion graphics?</h1>
+    <p class="sub">October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>Motion graphics are animated text, icons, shapes, charts and logos. It is the right format when the information is the point and you want it understood fast. Movement guides the eye, and an abstract number suddenly becomes easy to take in.</p><h2>Motion graphics or animation?</h2><p>The difference is simple. Motion graphics focus on graphic elements, data and text in motion. Character animation is more about story. Many productions blend both: character animation for the narrative and motion graphics for charts and numbers.</p><h2>Where motion graphics work best</h2><ul><li>Data visualization: results, statistics and reports made clear</li><li>Logo animation for intros, outros and social</li><li>Kinetic typography that drives a message home</li><li>Explaining processes and flows that are hard to describe in text</li><li>Internal comms where the whole team needs the same numbers</li></ul><h2>What does it cost?</h2><p>Motion graphics production starts at $797 per 30 seconds. Price depends on length and how advanced the graphics are. Script, design, animation, music and revisions are included.</p><h2>Read more</h2><p>Want to go deeper? See our <a href="/motion-graphics/">motion graphics</a> service, or read about <a href="/explainer-video/">explainer video</a> if you need a video that also tells a story.</p>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Want to make a video?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
+'''}
+P['blog/what-are-motion-graphics/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"What are motion graphics?","datePublished":"2026-10-03","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/what-are-motion-graphics/"},"description":"What are motion graphics? A clear explanation of animated graphics, when they fit, how they differ from animation, and what they cost.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/what-are-motion-graphics/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"What are motion graphics?","item":"https://expansionvideos.com/blog/what-are-motion-graphics/"}]}</script>'''
+
+P['blog/2d-vs-3d-animation/index.html'] = {
+'title': '2D vs 3D Animation: Which Should You Choose? | ExpansionVideos',
+'desc': '2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/blog/" style="color:var(--blue,#2563eb)">← Blog</a></p>
+    <h1 class="h1">2D vs 3D animation: which should you choose?</h1>
+    <p class="sub">October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>One of the most common questions we get: should the video be 2D or 3D? Both are strong, but they solve different problems. Here is a simple guide to choosing.</p><h2>2D animation</h2><p>2D animation is hand-crafted animation using characters, illustration and motion in two dimensions. It is the most versatile and popular format for explainer and brand video. It is faster and more cost-effective than 3D, and gives a clear, warm look that is easy to tailor to your brand.</p><h2>3D animation</h2><p>3D animation builds scenes and objects in three dimensions. It fits when you need to show a physical product from every angle, a technical process in depth, or a sense of premium and realism. 3D takes longer and costs more, but opens up possibilities 2D cannot.</p><h2>How to choose</h2><ul><li>Choose 2D for explainer video, messaging and story on a tighter budget and timeline</li><li>Choose 3D for product visualization, hardware and when realism or a premium feel is decisive</li><li>Not sure? We start with the goal and recommend the format that does the most for your budget</li></ul><h2>What does it cost?</h2><p>2D animation starts at $797 per 30 seconds. 3D is quoted per project since complexity varies. See the full picture on our <a href="/pricing/">pricing page</a>.</p><h2>Read more</h2><p>Dig into <a href="/2d-animation/">2D animation</a> or compare with our <a href="/product-video/">product video</a> service, or get in touch and we will help you choose.</p>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Want to make a video?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
+'''}
+P['blog/2d-vs-3d-animation/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"2D vs 3D animation: which should you choose?","datePublished":"2026-10-03","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/2d-vs-3d-animation/"},"description":"2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"2D vs 3D animation: which should you choose?","item":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}]}</script>'''
+
 BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
@@ -1008,8 +1081,6 @@ _redirects = """# 301 redirects from old WordPress URLs to the current structure
 /category/*  /  301
 /author/*  /  301
 /tag/*  /  301
-/blog  /  301
-/blog/*  /  301
 /blog-old/*  /  301
 /2020/*  /  301
 /2021/*  /  301
