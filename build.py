@@ -952,7 +952,6 @@ _redirects = """# 301 redirects from old WordPress URLs to the current structure
 
 # Old service / landing pages
 /our-services/  /services/  301
-/explainer-video/  /services/  301
 /explainer_video/  /services/  301
 /explainervideo/*  /services/  301
 /animated-video/  /services/  301
