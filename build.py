@@ -861,3 +861,25 @@ _redirects = """# 301 redirects from old WordPress URLs to the current structure
 with open(os.path.join(SITE, '_redirects'), 'w', encoding='utf-8') as _f:
     _f.write(_redirects)
 print(f'_redirects written ({_redirects.count(chr(10)+chr(47))} rules)')
+
+
+# --- 404.html: proper branded 404 so unmatched URLs return 404, not homepage-200 ---
+_404_body = """
+<section class="hero" style="min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center">
+<div class="wrap">
+    <p class="label">Error 404</p>
+    <h1 class="h1">Page not found</h1>
+    <p class="sub" style="max-width:520px;margin:1rem auto 2rem">The page you were looking for does not exist or has moved. Here are some good ways forward.</p>
+    <div class="hero-btns" style="justify-content:center">
+        <a href="/" class="btn btn-fill btn-lg">Back to home</a>
+        <a href="/services/" class="btn btn-outline btn-lg">Our services</a>
+    </div>
+    <p class="sub" style="margin-top:28px;font-size:15px">Or go to <a href="/pricing/">Pricing</a>, <a href="/case-studies/">Case Studies</a> or <a href="/contact/">Contact</a>.</p>
+</div>
+</section>
+"""
+_404 = HEAD.format(title='Page not found (404) | ExpansionVideos', desc='The page could not be found.', schema='', url='https://expansionvideos.com/404.html') + _404_body + FOOT
+_404 = _404.replace('<head>', '<head>\n<meta name="robots" content="noindex,follow">', 1)
+with open(os.path.join(SITE, '404.html'), 'w', encoding='utf-8') as _f:
+    _f.write(_404)
+print('404.html written')
