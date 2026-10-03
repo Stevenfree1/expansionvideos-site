@@ -40,7 +40,7 @@ FOOT = '''
 <div class="ftr-col"><h4>Navigation</h4><p><a href="/services/">Services</a></p><p><a href="/ai-video/">AI Video</a></p><p><a href="/case-studies/">Case Studies</a></p><p><a href="/blog/">Blog</a></p><p><a href="/pricing/">Pricing</a></p><p><a href="/contact/">Contact</a></p></div>
 <div class="ftr-col"><h4>Get Started</h4><p><a href="https://calendly.com/mikael-hamrin/30min">Book a Free Call →</a></p><p style="margin-top:16px">Villadose LLC<br>Sheridan, Wyoming</p></div>
 </div>
-<div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos, Villadose LLC</div>
+<div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos, part of Villadose LLC &nbsp;·&nbsp; Sheridan, Wyoming, USA &nbsp;·&nbsp; <a href="/privacy-policy/">Privacy</a> &nbsp;·&nbsp; <a href="/terms-of-service/">Terms</a> &nbsp;·&nbsp; <a href="/cookie-policy/">Cookies</a></div>
 </div></footer>
 </body></html>'''
 
@@ -279,6 +279,7 @@ P['services/index.html'] = {
     <div class="svc-card"><div class="svc-icon">📐</div><h3><a href="/motion-graphics/" style="color:inherit;text-decoration:none">Motion Graphics</a></h3><p>Animated graphics, data and text that make information move.</p><a href="/motion-graphics/" class="btn btn-outline" style="margin-top:16px">Learn more →</a></div>
     <div class="svc-card"><div class="svc-icon">📦</div><h3><a href="/product-video/" style="color:inherit;text-decoration:none">Product & SaaS Video</a></h3><p>Show what your product does and why it is worth buying.</p><a href="/product-video/" class="btn btn-outline" style="margin-top:16px">Learn more →</a></div>
     <div class="svc-card"><div class="svc-icon">✍️</div><h3><a href="/whiteboard-animation/" style="color:inherit;text-decoration:none">Whiteboard Animation</a></h3><p>Clean hand-drawn style for education and complex topics.</p><a href="/whiteboard-animation/" class="btn btn-outline" style="margin-top:16px">Learn more →</a></div>
+    <div class="svc-card"><div class="svc-icon">👥</div><h3><a href="/recruitment-video/" style="color:inherit;text-decoration:none">Recruitment Video</a></h3><p>Employer branding video that shows your culture and attracts talent.</p><a href="/recruitment-video/" class="btn btn-outline" style="margin-top:16px">Learn more →</a></div>
     <div class="svc-card"><div class="svc-icon">🤖</div><h3><a href="/ai-video/" style="color:inherit;text-decoration:none">AI Video</a></h3><p>Faster, lower-cost video powered by AI, from $497.</p><a href="/ai-video/" class="btn btn-outline" style="margin-top:16px">Learn more →</a></div>
 </div>
 </div></section>
@@ -888,6 +889,92 @@ P['blog/2d-vs-3d-animation/index.html'] = {
 '''}
 P['blog/2d-vs-3d-animation/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"2D vs 3D animation: which should you choose?","datePublished":"2026-10-03","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/2d-vs-3d-animation/"},"description":"2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"2D vs 3D animation: which should you choose?","item":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}]}</script>'''
 
+P['privacy-policy/index.html'] = {
+'title': 'Privacy Policy | ExpansionVideos',
+'desc': 'How ExpansionVideos handles your personal data: what we collect, why, how long we keep it and your rights.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/" style="color:var(--blue,#2563eb)">← Home</a></p>
+    <h1 class="h1">Privacy Policy</h1>
+    <p class="sub">Last updated: October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>ExpansionVideos, part of Villadose LLC, respects your privacy and handles your personal data responsibly. This policy explains what we collect, why, and the rights you have.</p><h2>Who we are</h2><p>Villadose LLC, operating as ExpansionVideos, Sheridan, Wyoming, USA. Contact: <a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a>.</p><h2>What we collect</h2><p>We collect the information you provide through our contact and order forms, our booking link, or by email: name, email address, company name and the project details you share. We also collect limited technical information through cookies, see our <a href="/cookie-policy/">cookie policy</a>.</p><h2>Why we process it</h2><ul><li>To answer enquiries and provide quotes</li><li>To deliver and administer the services you order</li><li>To understand and improve the website through aggregated statistics, only with your consent</li></ul><h2>Services we use</h2><p>We share data with providers that help us run the business, only as needed: Cloudflare (hosting), Calendly (booking), our form handling for enquiries, and, where enabled, Google Analytics for statistics. We never sell your data.</p><h2>How long we keep it</h2><p>We keep enquiry data as long as needed to handle the matter and any business relationship, and thereafter as required by law. Statistics are stored in aggregated form.</p><h2>Your rights</h2><p>You may request access to, correction or deletion of your data, object to or restrict processing, and request data portability. You can withdraw consent at any time. Contact us at <a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a>.</p><h2>Changes</h2><p>We may update this policy. The latest version is always on this page.</p>
+</div></div></section>
+'''}
+P['privacy-policy/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://expansionvideos.com/privacy-policy/"}]}</script>'''
+
+P['terms-of-service/index.html'] = {
+'title': 'Terms of Service | ExpansionVideos',
+'desc': 'Terms of service for ExpansionVideos: quotes and orders, pricing, delivery, revisions, the satisfaction guarantee, rights and liability.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/" style="color:var(--blue,#2563eb)">← Home</a></p>
+    <h1 class="h1">Terms of Service</h1>
+    <p class="sub">Last updated: October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>These terms apply to services delivered by ExpansionVideos, part of Villadose LLC. We keep them short and plain so it is easy to work with us.</p><h2>Quotes and orders</h2><p>We provide a free quote based on your brief. An order becomes binding once you approve the quote and scope in writing, for example by email or through our order form.</p><h2>Pricing and payment</h2><p>Prices are in US dollars unless stated otherwise. Current pricing is on our <a href="/pricing/">pricing page</a>. Payment terms appear on the invoice. For larger projects we may invoice in stages.</p><h2>Delivery and revisions</h2><p>We agree delivery time at order. The number of revision rounds is stated in the quote. We work until you are happy within the agreed scope. Significant additions beyond the agreed scope may affect price and timeline.</p><h2>Satisfaction guarantee</h2><p>We offer a satisfaction guarantee. If you are not satisfied after the agreed revision rounds, we will find a solution, which may include a refund as agreed.</p><h2>Intellectual property</h2><p>On full payment, the right to use the finished video transfers to you as agreed. We reserve the right to show finished work in our own portfolio and marketing unless agreed otherwise.</p><h2>Liability</h2><p>Our liability is limited to the amount you paid for the service in question. We are not liable for indirect damages. Nothing in these terms limits liability that cannot be limited under applicable law.</p><h2>Contact</h2><p>Questions about these terms: <a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a>.</p>
+</div></div></section>
+'''}
+P['terms-of-service/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Terms of Service","item":"https://expansionvideos.com/terms-of-service/"}]}</script>'''
+
+P['cookie-policy/index.html'] = {
+'title': 'Cookie Policy | ExpansionVideos',
+'desc': 'How ExpansionVideos uses cookies: essential cookies, click-to-load video, and consent-gated analytics.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/" style="color:var(--blue,#2563eb)">← Home</a></p>
+    <h1 class="h1">Cookie Policy</h1>
+    <p class="sub">Last updated: October 3, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>This page explains how ExpansionVideos uses cookies and similar technologies.</p><h2>What are cookies?</h2><p>Cookies are small text files stored in your browser. They are used to make a website work and to understand how it is used.</p><h2>Cookies we use</h2><ul><li><strong>Essential.</strong> Needed for the website to work. Always on.</li><li><strong>Video.</strong> We load YouTube videos only when you click play, so no video cookies are set until then.</li><li><strong>Analytics.</strong> If analytics is enabled, it loads only with your consent and helps us understand how the site is used.</li></ul><h2>Managing cookies</h2><p>You can control or delete cookies in your browser settings at any time. Blocking essential cookies may affect how the site works.</p><h2>More information</h2><p>How we handle personal data is described in our <a href="/privacy-policy/">privacy policy</a>. Questions: <a href="mailto:studio@expansionvideos.com">studio@expansionvideos.com</a>.</p>
+</div></div></section>
+'''}
+P['cookie-policy/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Cookie Policy","item":"https://expansionvideos.com/cookie-policy/"}]}</script>'''
+
+P['recruitment-video/index.html'] = {
+'title': 'Recruitment Video & Employer Branding Video | ExpansionVideos',
+'desc': 'Animated recruitment video that shows your culture and attracts the right candidates. For careers pages, LinkedIn and ads. From $797.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 80px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/services/" style="color:var(--blue,#2563eb)">← All services</a></p>
+    <h1 class="h1">Recruitment video and <span class="blue">employer branding</span></h1>
+    <p class="sub">A recruitment video shows what it is really like to work with you, in a way a job ad never can. The right candidates recognise themselves, the wrong ones opt out.</p>
+    <div class="hero-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div>
+</div></div></section>
+<section class="sec" style="padding-top:80px"><div class="wrap"><div class="sec-hdr tc"><p class="label">Why recruitment video</p><h2 class="h2">Show the culture, not just the role</h2></div>
+<div class="guar-grid" style="margin-top:48px">
+<div class="guar-card"><div class="g-icon">🎯</div><h4>Right candidates</h4><p>Show the day-to-day honestly so the people who fit recognise themselves and apply.</p></div>
+<div class="guar-card"><div class="g-icon">💬</div><h4>Consistent message</h4><p>The same employer story in every channel, from the careers page to LinkedIn.</p></div>
+<div class="guar-card"><div class="g-icon">🔁</div><h4>Easy to update</h4><p>When the offer or team changes, we update the video without a new shoot.</p></div>
+</div></div></section>
+<section class="sec sec-gray"><div class="wrap"><div class="sec-hdr tc"><p class="label">Use cases</p><h2 class="h2">Where it works best</h2></div>
+<div class="svc-grid" style="margin-top:48px">
+<div class="svc-card"><div class="svc-icon">💼</div><h3>Careers page</h3><p>Give visitors a quick, honest feel for working with you.</p></div>
+<div class="svc-card"><div class="svc-icon">🔗</div><h3>LinkedIn</h3><p>Employer branding that reaches passive candidates where they already are.</p></div>
+<div class="svc-card"><div class="svc-icon">📣</div><h3>Recruitment ads</h3><p>Short cutdowns built for Meta, LinkedIn and YouTube.</p></div>
+<div class="svc-card"><div class="svc-icon">🎓</div><h3>Onboarding</h3><p>Welcome new hires and explain culture and process from day one.</p></div>
+<div class="svc-card"><div class="svc-icon">🌍</div><h3>Multiple languages</h3><p>Hiring internationally? Reuse the video with new voiceover and text.</p></div>
+<div class="svc-card"><div class="svc-icon">🏢</div><h3>Career fairs</h3><p>A video that draws attention and tells your story on the stand.</p></div>
+</div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-hdr tc"><p class="label">FAQ</p><h2 class="h2">Frequently asked questions</h2></div>
+<div class="faq-grid" style="margin-top:48px">
+<div class="faq-card"><h4>What is a recruitment video?</h4><p>A recruitment video is a short video that shows what it is like to work at your company: the culture, the way you work and the people. It is used on careers pages, in ads and on LinkedIn to attract the right candidates.</p></div><div class="faq-card"><h4>Why animated recruitment video?</h4><p>Animation lets you show culture, values and benefits clearly and consistently, without a big shoot. It is easy to update and works just as well in several languages.</p></div><div class="faq-card"><h4>What does a recruitment video cost?</h4><p>An animated recruitment video starts at $797 per 30 seconds. Price depends on length, scene count and number of languages. We provide a free quote.</p></div>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Ready to attract the right candidates?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
+'''}
+P['recruitment-video/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Recruitment Video Production","serviceType":"Recruitment and employer branding video","provider":{"@id":"https://expansionvideos.com/#org"},"areaServed":"Worldwide","description":"Animated recruitment video and employer branding video that shows your culture and attracts the right candidates. From $797.","url":"https://expansionvideos.com/recruitment-video/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://expansionvideos.com/services/"},{"@type":"ListItem","position":3,"name":"Recruitment Video","item":"https://expansionvideos.com/recruitment-video/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a recruitment video?","acceptedAnswer":{"@type":"Answer","text":"A recruitment video is a short video that shows what it is like to work at your company: the culture, the way you work and the people. It is used on careers pages, in ads and on LinkedIn to attract the right candidates."}},{"@type":"Question","name":"Why animated recruitment video?","acceptedAnswer":{"@type":"Answer","text":"Animation lets you show culture, values and benefits clearly and consistently, without a big shoot. It is easy to update and works just as well in several languages."}},{"@type":"Question","name":"What does a recruitment video cost?","acceptedAnswer":{"@type":"Answer","text":"An animated recruitment video starts at $797 per 30 seconds. Price depends on length, scene count and number of languages. We provide a free quote."}}]}</script>'''
+
 BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
@@ -1047,8 +1134,6 @@ _redirects = """# 301 redirects from old WordPress URLs to the current structure
 /about-us/  /  301
 /who-we-are  /  301
 /team-details-2/  /  301
-/privacy-policy/  /  301
-/terms-of-service/  /  301
 /become-reseller/  /  301
 /become-reseller-svenska/  /  301
 /en/home/  /  301
