@@ -24,6 +24,7 @@ HEAD = '''<!DOCTYPE html>
 <meta name="twitter:image" content="https://expansionvideos.com/img/logo.png">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos for 56+ industries since 2015.","foundingDate":"2015","email":"studio@expansionvideos.com","address":{{"@type":"PostalAddress","addressLocality":"Sheridan","addressRegion":"WY","addressCountry":"US"}},"areaServed":"Worldwide","knowsLanguage":["en","es","fr","de","sv"],"sameAs":["https://www.instagram.com/expansionvideos/","https://www.linkedin.com/company/expansionvideos/","https://www.tiktok.com/@expansionvideos","https://www.youtube.com/@expansionvideosofficial"]}}</script>
 {schema}
+<script src="/js/cookie-consent.js" defer></script>
 </head>
 <body>
 <header class="hdr"><div class="wrap">
@@ -1097,6 +1098,13 @@ _css_dst = os.path.join(SITE, 'css', 'style.css')
 os.makedirs(os.path.dirname(_css_dst), exist_ok=True)
 shutil.copyfile(_css_src, _css_dst)
 print(f'css emitted: css/style.css ({os.path.getsize(_css_dst):,} bytes)')
+
+# --- Emit JS: cookie consent manager ---
+_js_src = os.path.join(os.path.dirname(__file__), 'js', 'cookie-consent.js')
+_js_dst = os.path.join(SITE, 'js', 'cookie-consent.js')
+os.makedirs(os.path.dirname(_js_dst), exist_ok=True)
+shutil.copyfile(_js_src, _js_dst)
+print('js emitted: js/cookie-consent.js')
 
 # --- robots.txt: welcome all crawlers (including AI search engines) + sitemap ---
 _robots = """# ExpansionVideos - all crawlers welcome, including AI search engines.
