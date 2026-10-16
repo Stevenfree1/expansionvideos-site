@@ -1107,6 +1107,28 @@ P['order/index.html'] = {
 '''}
 P['order/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Order","item":"https://expansionvideos.com/order/"}]}</script>'''
 
+PROOF_EV = '''
+<section class="sec sec-dark">
+<div class="wrap">
+<div class="sec-hdr tc">
+<p class="label">Testimonials</p>
+<h2 class="h2">Trusted by 500+ businesses</h2>
+<p class="sub mx-a" style="margin-top:16px">Rated 4.9 out of 5 from 44 verified client reviews.</p>
+</div>
+<div class="test-grid">
+<div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Together with Expansionvideos, we managed to package a complex topic into a great video."</div><div class="test-author">Maren Buchmüller</div><div class="test-role">COS Systems</div></div>
+<div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"The team at Expansionvideos were fast, efficient and gave me advice throughout."</div><div class="test-author">Amit Joshi</div><div class="test-role">Mighty CRM</div></div>
+<div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Communication was smooth, with a proper understanding of our needs and good execution."</div><div class="test-author">Vidyas</div><div class="test-role">WSO2</div></div>
+</div>
+</div>
+</section>
+'''
+PROOF_PAGES = {
+'pricing/index.html','services/index.html','ai-video/index.html','explainer-video/index.html',
+'2d-animation/index.html','motion-graphics/index.html','product-video/index.html',
+'whiteboard-animation/index.html','recruitment-video/index.html','portfolio/index.html',
+'case-studies/index.html','contact/index.html','order/index.html'
+}
 BUILD_TS = str(int(time.time()))
 for fn, pg in P.items():
     fp = os.path.join(SITE, fn)
@@ -1114,6 +1136,8 @@ for fn, pg in P.items():
     _url = 'https://expansionvideos.com/' + ('' if fn == 'index.html' else fn.replace('index.html', ''))
     html = HEAD.format(title=pg['title'], desc=pg['desc'], schema=pg.get('schema', ''), url=_url) + pg['body'] + FOOT
     html = html.replace('</head>', f'<!-- build:{BUILD_TS} --></head>', 1)
+    if fn in PROOF_PAGES and '<section class="cta">' in html:
+        html = html.replace('<section class="cta">', PROOF_EV + '<section class="cta">', 1)
     if not (fn.startswith('order/') or 'thank-you' in fn):
         html = html.replace('</body>', FAB + '</body>', 1)
     with open(fp, 'w', encoding='utf-8') as f:
