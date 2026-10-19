@@ -88,7 +88,7 @@ P['index.html'] = {
 <div class="wrap">
 <div class="sec-hdr tc"><p class="label">Services</p><h2 class="h2">The right video for every need</h2><p class="sub mx-a" style="margin-top:16px">Professional video production for every budget and timeline.</p></div>
 <div class="svc-grid">
-    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days, not weeks. Perfect for social media campaigns, ads, and volume production at a fraction of the cost.</p><div class="svc-price">Price on request</div></div>
+    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days, not weeks. Perfect for social media campaigns, ads, and volume production at a fraction of the cost.</p><div class="svc-price">Request Quote</div></div>
     <div class="svc-card"><div class="svc-icon">🎬</div><h3>2D Animation</h3><p>Our most popular service since 2015. Hand-crafted custom 2D animation with professional scriptwriting, voiceover, and unlimited revisions. The standard choice.</p><div class="svc-price">from $797 <small>/ 30 sec</small></div></div>
     <div class="svc-card"><div class="svc-icon">🏆</div><h3>Premium / Custom</h3><p>Exclusive production for demanding clients. Senior team, cinematic quality, fully customized. The same level we've created for Fortune 500 companies and agencies.</p><div class="svc-price">Quote on Request</div></div>
 </div>
@@ -173,7 +173,7 @@ P['pricing/index.html'] = {
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">Price on request</div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume. Priced per project.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-ghost btn-w100 btn-sm">Request a quote →</a></div>
+    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">Request Quote</div><div class="price-desc">Fast, budget-friendly. Perfect for social media, ads, and volume. Priced per project.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>5–7 business days</li><li>HD delivery</li></ul><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
     <div class="price-card pop"><div class="price-dur">🎬 2D Animation</div><div class="price-amt">$797 <small>/30s</small></div><div class="price-desc">Our most popular. Hand-crafted custom design for most businesses.</div><ul class="price-list"><li>Custom 2D animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Unlimited revisions</li><li>3–4 weeks delivery</li><li>All formats included</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Get Started →</a></div>
     <div class="price-card"><div class="price-dur">🏆 Premium / Custom</div><div class="price-amt">Request Quote</div><div class="price-desc">Exclusive quality for demanding projects. Senior team. Cinematic.</div><ul class="price-list"><li>Fully custom production</li><li>Senior animator & team</li><li>Premium voiceover & music</li><li>Unlimited revisions</li><li>Priority delivery</li><li>Dedicated project lead</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
 </div>
@@ -266,7 +266,7 @@ P['services/index.html'] = {
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
 <div class="svc-grid">
-    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days. Perfect for social media, ad campaigns, and volume production. Cost-effective and flexible.</p><div class="svc-price">Price on request <small>· 5–7 days</small></div></div>
+    <div class="svc-card new"><span class="svc-badge">NEW</span><div class="svc-icon">🤖</div><h3>AI Video</h3><p>Professional videos powered by AI. Delivered in days. Perfect for social media, ad campaigns, and volume production. Cost-effective and flexible.</p><div class="svc-price">Request Quote <small>· 5–7 days</small></div></div>
     <div class="svc-card"><div class="svc-icon">🎬</div><h3>2D Animation</h3><p>Our flagship since 2015. Custom 2D animation with professional scriptwriting, voiceover, and unlimited revisions. Perfect for product launches, SaaS demos, and brand stories.</p><div class="svc-price">from $797 <small>· 3–4 weeks</small></div></div>
     <div class="svc-card"><div class="svc-icon">🏆</div><h3>Premium / Custom</h3><p>Exclusive cinematic production for demanding clients. Senior team, fully customized, unlimited revisions. For Fortune 500 companies, agencies, and complex projects.</p><div class="svc-price">Quote on Request</div></div>
 </div>
@@ -321,7 +321,7 @@ P['ai-video/index.html'] = {
 <ul class="price-list" style="display:inline-block;text-align:left;margin:28px auto 0">
 <li>AI-generated scenes and animation</li><li>Professional voiceover</li><li>Background music</li><li>Revisions included</li><li>5–7 business days</li><li>HD delivery</li>
 </ul>
-<div style="margin-top:32px"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Request a quote →</a></div>
+<div style="margin-top:32px"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Request Quote →</a></div>
 </div>
 </div></section>
 
@@ -1090,7 +1090,7 @@ P['order/index.html'] = {
 </div></div></section>
 <section class="sec" style="padding-top:40px"><div class="wrap">
 <div class="price-grid">
-    <div class="price-card"><div class="price-dur">AI Video</div><div class="price-amt">Price on request</div><div class="price-desc">Fast, cost-effective AI production. Ideal for ads, social and volume. Delivered in 5 to 7 days. Priced per project.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Music and HD delivery</li><li>5 to 7 day delivery</li></ul><a href="/order/ai-video/" class="btn btn-fill btn-w100">Request a Quote →</a></div>
+    <div class="price-card"><div class="price-dur">AI Video</div><div class="price-amt">Request Quote</div><div class="price-desc">Fast, cost-effective AI production. Ideal for ads, social and volume. Delivered in 5 to 7 days. Priced per project.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Music and HD delivery</li><li>5 to 7 day delivery</li></ul><a href="/order/ai-video/" class="btn btn-fill btn-w100">Request a Quote →</a></div>
     <div class="price-card pop"><div class="price-dur">2D Animation</div><div class="price-amt">$797 <small>/30s</small></div><div class="price-desc">Our flagship. Custom hand-crafted 2D animation with unlimited revisions. The standard choice for most.</div><ul class="price-list"><li>Custom design</li><li>Script and pro voiceover</li><li>Unlimited revisions</li><li>Satisfaction guarantee</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100">Order 2D Animation →</a></div>
     <div class="price-card"><div class="price-dur">Premium / Custom</div><div class="price-amt">Quote</div><div class="price-desc">Exclusive cinematic production for demanding projects. Senior team and priority delivery.</div><ul class="price-list"><li>Fully customized</li><li>Senior production</li><li>Priority delivery</li><li>Quote within 24 hours</li></ul><a href="/contact/" class="btn btn-ghost btn-w100">Request a Quote →</a></div>
 </div>
