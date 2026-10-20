@@ -1,13 +1,13 @@
 /**
  * Cookie Consent — ExpansionVideos
  * GDPR-friendly consent manager for expansionvideos.com
- * GA4: G-X9ZQR20QNZ (loaded only after analytics consent)
+ * GTM: GTM-T3SQ6XD (Villadose-owned) — holds the GA4 Google tag (G-X9ZQR20QNZ) + generate_lead
  */
 (function () {
   'use strict';
 
   var STORAGE_KEY = 'ev_cookie_consent';
-  var GA_ID = 'G-X9ZQR20QNZ';
+  var GTM_ID = 'GTM-T3SQ6XD';
 
   function getPrefs() {
     try {
@@ -20,22 +20,20 @@
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs)); } catch (e) {}
   }
 
-  function loadGA() {
-    if (window.__gaLoaded) return;
-    window.__gaLoaded = true;
+  function loadGTM() {
+    if (window.__gtmLoaded) return;
+    window.__gtmLoaded = true;
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', GA_ID);
-    var g = document.createElement('script');
-    g.async = true;
-    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var j = document.createElement('script');
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
     var f = document.getElementsByTagName('script')[0];
-    f.parentNode.insertBefore(g, f);
+    f.parentNode.insertBefore(j, f);
   }
 
   function applyPrefs(prefs) {
-    if (prefs.analytics) loadGA();
+    if (prefs.analytics) loadGTM();
   }
 
   var existing = getPrefs();
