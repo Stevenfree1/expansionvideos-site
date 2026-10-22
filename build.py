@@ -1123,6 +1123,104 @@ PROOF_EV = '''
 </div>
 </section>
 '''
+P['get-started/index.html'] = {
+'title': 'Custom Explainer Videos from $797 | Expansionvideos',
+'desc': 'Custom animated explainer videos for SaaS, B2B and product teams. 2D Animation from $797. 500+ videos, 56+ industries, 4.9 star rating. Money-back guarantee.',
+'body': '''
+<section class="hero">
+<div class="wrap">
+<div class="hero-text">
+    <p class="label">Explainer Video Production</p>
+    <h1 class="h1">Custom explainer videos <span class="blue">from $797</span></h1>
+    <p class="sub">For SaaS, B2B and product teams who need to explain what they do clearly. Script, voiceover, music and animation, all included.</p>
+    <div class="hero-btns">
+        <a href="/order/2d-animation/" class="btn btn-fill btn-lg">Start Your Video →</a>
+        <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-outline btn-lg">Book a free call</a>
+    </div>
+</div>
+<div class="hero-video">
+    <div class="hero-video-inner">
+        <div class="yt-facade" data-id="-ls8HYBvVw8" onclick="this.outerHTML='<iframe src=\\'https://www.youtube.com/embed/-ls8HYBvVw8?rel=0&autoplay=1\\' title=\\'ExpansionVideos\\' allow=\\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\\' allowfullscreen style=\\'position:absolute;inset:0;width:100%;height:100%;border:none\\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/-ls8HYBvVw8/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding:28px 32px 0">
+<div class="wrap"><p class="sub tc mx-a" style="max-width:720px">A clear explainer video helps the right people understand your product faster. We handle the whole process, from script to final HD video, with a fixed price and a fixed deadline so you know what you are getting before you start.</p></div>
+</section>
+
+<section class="stats"><div class="wrap">
+<div class="stats-item"><h3>500+</h3><p>Videos Produced</p></div>
+<div class="stats-item"><h3>56+</h3><p>Industries Served</p></div>
+<div class="stats-item"><h3>4.9 ★</h3><p>Client Rating</p></div>
+<div class="stats-item"><h3>10+ yrs</h3><p>Experience</p></div>
+</div></section>
+
+<section class="logos"><div class="wrap">
+<p>Trusted by leading brands</p>
+<div class="logos-row">
+<img src="/img/clients/toyota.png" alt="Toyota"><img src="/img/clients/deloitte.png" alt="Deloitte"><img src="/img/clients/aigo.png" alt="Aigo"><img src="/img/clients/ridian.jpg" alt="Ridian"><span>MAPS</span><img src="/img/clients/veritas.png" alt="Veritas"><span>Pacific West</span><img src="/img/clients/metaforce.png" alt="Metaforce">
+</div>
+</div></section>
+
+<section class="sec">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">Choose Your Video</p><h2 class="h2">Pick the format that fits</h2><p class="sub mx-a" style="margin-top:16px">2D Animation is our most popular choice and the fastest way to get started.</p></div>
+<div class="price-grid">
+    <div class="price-card"><div class="price-dur">🤖 AI Video</div><div class="price-amt">Request Quote</div><div class="price-desc">Budget-friendly. Good for social media, ads, and volume. Priced per project.</div><ul class="price-list"><li>AI-generated animation</li><li>Professional voiceover</li><li>Background music</li><li>1 revision round</li><li>HD delivery</li></ul><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
+    <div class="price-card pop"><div class="price-dur">🎬 2D Animation</div><div class="price-amt">from $797 <small>/30s</small></div><div class="price-desc">Our most popular. Hand-crafted custom design for most businesses.</div><ul class="price-list"><li>Custom 2D animation</li><li>Professional scriptwriter</li><li>Premium voiceover</li><li>Unlimited revisions</li><li>3–4 weeks delivery</li><li>All formats included</li></ul><a href="/order/2d-animation/" class="btn btn-fill btn-w100 btn-sm">Start Your Video →</a></div>
+    <div class="price-card"><div class="price-dur">🏆 Premium / Custom</div><div class="price-amt">Quote on Request</div><div class="price-desc">Exclusive quality for demanding projects. Senior team. Cinematic.</div><ul class="price-list"><li>Fully custom production</li><li>Senior animator & team</li><li>Premium voiceover & music</li><li>Unlimited revisions</li><li>Priority delivery</li><li>Dedicated project lead</li></ul><a href="/contact/" class="btn btn-ghost btn-w100 btn-sm">Request Quote →</a></div>
+</div>
+</div></section>
+
+<section class="sec sec-gray">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">Our Promise</p><h2 class="h2">Zero risk. Guaranteed.</h2><p class="sub mx-a" style="margin-top:16px">We want you to feel completely confident working with us.</p></div>
+<div class="guar-grid">
+    <div class="guar-card"><div class="g-icon">💰</div><h4>Money-Back Guarantee</h4><p>Not satisfied? We offer a full money-back guarantee. Your investment is protected.</p></div>
+    <div class="guar-card"><div class="g-icon">🔄</div><h4>Unlimited Revisions</h4><p>We work until you're 100% happy. No extra charges for changes.</p></div>
+    <div class="guar-card"><div class="g-icon">📅</div><h4>Fixed Deadlines</h4><p>You know exactly when your video will be ready. No vague "coming soon" promises.</p></div>
+</div>
+</div></section>
+
+<section class="sec sec-dark">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">Testimonials</p><h2 class="h2">Trusted by 500+ businesses</h2><p class="sub mx-a" style="margin-top:12px">4.9 out of 5 from 44 verified client reviews.</p></div>
+<div class="test-grid">
+    <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Video is converting the best of any sales process I've tried. Working with Expansionvideos was a pleasure, smooth process, amazing quality, and the results we wanted."</div><div class="test-author">Moran Pober</div><div class="test-role">Founder, Acquisitions.com</div></div>
+    <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Since using the video, our customer support time has gone down and our sales have gone up. It was a no-brainer."</div><div class="test-author">Gun Hudson</div><div class="test-role">Founder, Global Tax Freedom</div></div>
+    <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Together with Expansionvideos, we managed to package a complex topic into a great video."</div><div class="test-author">Maren Buchmüller</div><div class="test-role">COS Systems</div></div>
+</div>
+</div></section>
+
+<section class="sec">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">FAQ</p><h2 class="h2">Questions, answered</h2></div>
+<div class="faq-grid">
+    <div class="faq-card"><h4>How long does a video take?</h4><p>Most 2D Animation projects are ready in 3 to 4 weeks. Premium projects get priority delivery. AI Video timelines vary by scope and are confirmed with your quote.</p></div>
+    <div class="faq-card"><h4>What's included?</h4><p>Everything: script, professional voiceover, background music, custom animation, HD delivery, and all common formats. No hidden fees.</p></div>
+    <div class="faq-card"><h4>How do revisions work?</h4><p>2D Animation includes unlimited revisions. You review each stage, from script to storyboard to final video, and we adjust until you're happy.</p></div>
+    <div class="faq-card"><h4>What does the money-back guarantee cover?</h4><p>If you're not satisfied after we've worked through revisions, you can request a full refund. Your investment is protected.</p></div>
+    <div class="faq-card"><h4>2D Animation or AI Video?</h4><p>2D Animation is hand-crafted, fully custom, and the standard choice for most businesses. AI Video is a lower-cost route for social, ads, and volume. If you're unsure, book a call and we'll advise.</p></div>
+    <div class="faq-card"><h4>Do you write the script?</h4><p>Yes. A professional scriptwriter handles it based on your brief and goals. You review and approve the script before anything is animated.</p></div>
+    <div class="faq-card"><h4>What does it cost?</h4><p>2D Animation is fixed-price by length: $797 for 30s, $1,397 for 60s, $1,997 for 90s, $2,597 for 2 minutes, and $3,797 for 3 minutes. AI Video and Premium are priced per project on quote.</p></div>
+    <div class="faq-card"><h4>What happens after I order?</h4><p>You fill in a short brief about your product and goals. We reply within 24 hours with next steps, then move through script, voiceover, storyboard, and delivery.</p></div>
+</div>
+</div></section>
+
+<section class="cta">
+<div class="wrap">
+    <p class="label">Get Started</p>
+    <h2 class="h2">Ready to create your video?</h2>
+    <p class="sub">Start your 2D Animation now, or book a free call if you'd like to talk it through first.</p>
+    <div class="cta-btns">
+        <a href="/order/2d-animation/" class="btn btn-fill btn-lg">Start Your Video →</a>
+        <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-outline btn-lg">Book a free call</a>
+    </div>
+</div></section>
+'''}
+
 PROOF_PAGES = {
 'pricing/index.html','services/index.html','ai-video/index.html','explainer-video/index.html',
 '2d-animation/index.html','motion-graphics/index.html','product-video/index.html',
