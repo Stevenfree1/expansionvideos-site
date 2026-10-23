@@ -9,6 +9,37 @@
   var STORAGE_KEY = 'ev_cookie_consent';
   var GTM_ID = 'GTM-T3SQ6XD';
 
+  // ── Consent Mode v2 ────────────────────────────────────────────────────────
+  // Defaults denied, load GTM for everyone. Google tags send cookieless modeling
+  // pings while denied and go full on consent. The Meta Pixel is gated inside GTM
+  // (requires ad_storage), so it stays off until the visitor accepts.
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    personalization_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+  gtag('set', 'url_passthrough', true);
+  loadGTM();
+
+  function grantConsent() {
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: 'granted',
+      personalization_storage: 'granted'
+    });
+  }
+
   function getPrefs() {
     try {
       var raw = localStorage.getItem(STORAGE_KEY);
@@ -33,7 +64,8 @@
   }
 
   function applyPrefs(prefs) {
-    if (prefs.analytics) loadGTM();
+    // GTM is already loaded for everyone (Consent Mode). Accepting upgrades consent.
+    if (prefs.analytics) grantConsent();
   }
 
   var existing = getPrefs();
@@ -57,7 +89,7 @@
   var banner = document.createElement('div');
   banner.id = 'ev-cc-banner';
   banner.innerHTML = [
-    '<div id="ev-cc-text">We use cookies to understand how the site is used. Analytics loads only if you accept. See our <a href="/cookie-policy/">cookie policy</a>.</div>',
+    '<div id="ev-cc-text">We use cookies for analytics and marketing (Google, Meta) to understand how the site is used and measure our ads. These load only if you accept. See our <a href="/cookie-policy/">cookie policy</a>.</div>',
     '<div id="ev-cc-btns">',
     '  <button id="ev-cc-accept">Accept</button>',
     '  <button id="ev-cc-reject">Only necessary</button>',
