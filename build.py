@@ -643,6 +643,7 @@ P['case-studies/index.html'] = {
 <p class="sub"><strong>Solution.</strong> We created an explainer that positions Tailor Store as the new way to buy shirts, then used it for YouTube remarketing to bring visitors back.</p>
 <p class="sub"><strong>Channels.</strong> YouTube.</p>
 <div class="stats" style="margin-top:24px;border-radius:16px"><div class="wrap"><div class="stats-item"><h3>3M+</h3><p>Views on YouTube</p></div><div class="stats-item"><h3>"You did very well"</h3><p>Tailor Store</p></div></div></div>
+<div style="max-width:720px;margin:24px auto 0"><div class="port-video"><div class="yt-facade" onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/R_5t5CAupXQ?rel=0&autoplay=1\' title=\'Tailor Store explainer\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen style=\'position:absolute;inset:0;width:100%;height:100%;border:none\'></iframe>'" style="position:absolute;inset:0;width:100%;height:100%;background:url(https://i.ytimg.com/vi/R_5t5CAupXQ/hqdefault.jpg) center/cover no-repeat;cursor:pointer"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:68px;height:48px;background:#ff0000;border-radius:12px;display:flex;align-items:center;justify-content:center"><svg viewBox='0 0 24 24' width='32' height='32' fill='white'><path d='M8 5v14l11-7z'/></svg></div></div></div></div></div>
 </div></section>
 
 <section class="cta">
