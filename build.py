@@ -300,8 +300,17 @@ P['ai-video/index.html'] = {
     <p class="label">AI Video Production</p>
     <h1 class="h1">Professional videos at a <span class="blue">fraction</span> of the cost</h1>
     <p class="sub">AI-powered video production. High quality, priced per project, so you only pay for what your video needs.</p>
-    <div class="hero-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div>
+    <div class="hero-btns"><a href="#quote" class="btn btn-fill btn-lg">Get a Quote →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div>
 </div></div></section>
+
+<section class="sec sec-gray" style="padding-top:64px">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">Examples</p><h2 class="h2">See AI video in action</h2><p class="sub mx-a" style="margin-top:12px">Two AI videos we produced, so you can see the style and quality before you commit.</p></div>
+<div class="port-grid" style="margin-top:32px">
+  <div class="port-card"><div class="port-video"><video controls preload="none" playsinline poster="/media/ai-exempel-1-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:none;background:#000"><source src="/media/ai-exempel-1.mp4" type="video/mp4"></video></div></div>
+  <div class="port-card"><div class="port-video"><video controls preload="none" playsinline poster="/media/ai-exempel-2-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:none;background:#000"><source src="/media/ai-exempel-2.mp4" type="video/mp4"></video></div></div>
+</div>
+</div></section>
 
 <section class="sec" style="padding-top:80px">
 <div class="wrap">
@@ -325,9 +334,25 @@ P['ai-video/index.html'] = {
 </div>
 </div></section>
 
-<section class="cta">
-<div class="wrap"><h2 class="h2">Ready to try AI video?</h2><p class="sub">Book a free call and get a quote in 24 hours.</p>
-<a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a>
+<section class="sec" id="quote">
+<div class="wrap-sm">
+<div class="sec-hdr tc"><p class="label">Get a quote</p><h2 class="h2">Interested? Tell us about your project</h2><p class="sub mx-a" style="margin-top:12px">Share a few details and we will come back within 24 hours with a quote and timeline. Prefer to talk? <a href="https://calendly.com/mikael-hamrin/30min" style="color:var(--blue);font-weight:600">Book a free call</a>.</p></div>
+<form id="aivForm" style="display:flex;flex-direction:column;gap:18px;max-width:560px;margin:28px auto 0">
+<div class="fg"><label>YOUR NAME</label><input type="text" name="name" placeholder="Full name" required></div>
+<div class="fg"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required></div>
+<div class="fg"><label>COMPANY / BRAND</label><input type="text" name="company" placeholder="Optional"></div>
+<div class="fg"><label>YOUR WEBSITE (OPTIONAL)</label><input type="text" name="website" placeholder="https://yoursite.com"></div>
+<div class="fg"><label>TELL US ABOUT YOUR PROJECT</label><textarea name="message" placeholder="What does your company do? What is the goal of the video?" required></textarea></div>
+<button type="submit" class="btn btn-fill btn-lg">Request my quote →</button>
+</form>
+<script>
+document.getElementById("aivForm").addEventListener("submit",function(e){
+e.preventDefault();
+var btn=this.querySelector("button[type=submit]");btn.disabled=true;btn.textContent="Sending...";
+var d=new FormData(this);
+fetch("https://leads.mikaelhamrin.com/leads",{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer mikael-leads-2026"},body:JSON.stringify({name:d.get("name"),email:d.get("email"),message:"AI Video quote request\\nCompany: "+d.get("company")+"\\nWebsite: "+d.get("website")+"\\nMessage: "+d.get("message"),source:"expansionvideos-aivideo",service:"AI Video"})}).then(function(){window.location="/thank-you/";}).catch(function(){window.location="/thank-you/";});
+});
+</script>
 </div></section>
 '''}
 
