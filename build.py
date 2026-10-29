@@ -61,6 +61,7 @@ P['index.html'] = {
         <a href="/pricing/" class="btn btn-fill btn-lg">See Pricing →</a>
         <a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-outline btn-lg">Book Free Call</a>
     </div>
+    <p class="sub" style="font-size:14px;color:#737373;margin-top:14px">Money-back guarantee. Unlimited revisions until you approve.</p>
 </div>
 <div class="hero-video">
     <div class="hero-video-inner">
@@ -144,6 +145,18 @@ P['index.html'] = {
     <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Simple and smooth process. Responsive to changes. Highly recommend."</div><div class="test-author">Stefan Konyi</div><div class="test-role">Ahlsell</div></div>
     <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Incredibly easy to work with, even with considerable input. Easy all the way!"</div><div class="test-author">Caroline Lindblad</div><div class="test-role">Offerta Group</div></div>
     <div class="test-card"><div class="test-stars">★★★★★</div><div class="test-quote">"Impressed by the result. Good service, fast delivery, excellent outcome."</div><div class="test-author">Peter Ahlgren</div><div class="test-role">Active Solution</div></div>
+</div>
+</div></section>
+
+<section class="sec sec-gray">
+<div class="wrap">
+<div class="sec-hdr tc"><p class="label">FAQ</p><h2 class="h2">Common questions</h2></div>
+<div class="faq-grid">
+    <div class="faq-card"><h4>What's included?</h4><p>Everything: script, professional voiceover, music, animation, HD delivery, and revisions. No hidden fees.</p></div>
+    <div class="faq-card"><h4>How long does it take?</h4><p>2D animation takes 3 to 4 weeks from brief to final video. AI Video is faster and varies by project.</p></div>
+    <div class="faq-card"><h4>Is there a money-back guarantee?</h4><p>Yes. If you're not satisfied after revisions, we offer a full refund. Your investment is protected.</p></div>
+    <div class="faq-card"><h4>2D animation or AI video?</h4><p>2D is hand-crafted custom animation from $797 fixed per 30 seconds, our most popular choice. AI Video is faster and budget-friendly, priced per project on quote.</p></div>
+    <div class="faq-card"><h4>What happens after I order?</h4><p>We start with your brief and script, then voiceover and storyboard so you approve each step, then we animate and deliver in HD.</p></div>
 </div>
 </div></section>
 
