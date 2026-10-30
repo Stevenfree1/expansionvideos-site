@@ -48,7 +48,7 @@ FOOT = '''
 P = {}
 
 P['index.html'] = {
-'title': '2D Animation, AI Video & Premium | ExpansionVideos',
+'title': 'Explainer Video Company | 2D Animation & AI Video | ExpansionVideos',
 'desc': 'Professional animated explainer videos, 2D Animation, AI Video & Premium. From $797. 500+ videos for 56+ industries since 2015. Money-back guarantee.',
 'body': '''
 <section class="hero">
@@ -173,7 +173,7 @@ P['index.html'] = {
 '''}
 
 P['pricing/index.html'] = {
-'title': 'Pricing | Simple, Transparent Pricing | ExpansionVideos',
+'title': 'Explainer Video Cost & Pricing | From $797 | ExpansionVideos',
 'desc': 'Simple pricing for animated explainer videos. From $797. Everything included: script, voiceover, music, animation. No hidden fees.',
 'body': '''
 <section class="hero" style="min-height:auto;padding:140px 32px 80px">
@@ -917,7 +917,7 @@ P['blog/index.html'] = {
     <p class="sub">Clear, practical guides on explainer videos, animation and video marketing.</p>
 </div></div></section>
 <section class="sec" style="padding-top:40px"><div class="wrap">
-<div class="blog-grid"><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-is-an-explainer-video/" style="color:inherit;text-decoration:none">What is an explainer video?</a></h3><p>What is an explainer video? A complete guide: what it is, when it works, how long it should be and what it costs, with examples.</p><a href="/blog/what-is-an-explainer-video/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-are-motion-graphics/" style="color:inherit;text-decoration:none">What are motion graphics?</a></h3><p>What are motion graphics? A clear explanation of animated graphics, when they fit, how they differ from animation, and what they cost.</p><a href="/blog/what-are-motion-graphics/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/2d-vs-3d-animation/" style="color:inherit;text-decoration:none">2D vs 3D animation: which should you choose?</a></h3><p>2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.</p><a href="/blog/2d-vs-3d-animation/" class="blog-link">Read more →</a></div></div></div>
+<div class="blog-grid"><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 30, 2026</div><h3><a href="/blog/explainer-video-cost/" style="color:inherit;text-decoration:none">How much does an explainer video cost?</a></h3><p>A clear 2026 pricing guide: what an explainer video costs, what drives the price, and what should be included.</p><a href="/blog/explainer-video-cost/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 30, 2026</div><h3><a href="/blog/best-explainer-video-companies/" style="color:inherit;text-decoration:none">How to choose the best explainer video company</a></h3><p>What separates a good explainer video company from a risky one, and how to shortlist the right partner.</p><a href="/blog/best-explainer-video-companies/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-is-an-explainer-video/" style="color:inherit;text-decoration:none">What is an explainer video?</a></h3><p>What is an explainer video? A complete guide: what it is, when it works, how long it should be and what it costs, with examples.</p><a href="/blog/what-is-an-explainer-video/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/what-are-motion-graphics/" style="color:inherit;text-decoration:none">What are motion graphics?</a></h3><p>What are motion graphics? A clear explanation of animated graphics, when they fit, how they differ from animation, and what they cost.</p><a href="/blog/what-are-motion-graphics/" class="blog-link">Read more →</a></div></div><div class="blog-card"><div class="blog-card-body"><div class="blog-date">October 3, 2026</div><h3><a href="/blog/2d-vs-3d-animation/" style="color:inherit;text-decoration:none">2D vs 3D animation: which should you choose?</a></h3><p>2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.</p><a href="/blog/2d-vs-3d-animation/" class="blog-link">Read more →</a></div></div></div>
 </div></section>
 '''}
 P['blog/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"ExpansionVideos Blog","description":"Guides on explainer videos, animation and video marketing.","url":"https://expansionvideos.com/blog/","publisher":{"@id":"https://expansionvideos.com/#org"}}</script>'''
@@ -978,6 +978,84 @@ P['blog/2d-vs-3d-animation/index.html'] = {
 <div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
 '''}
 P['blog/2d-vs-3d-animation/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"2D vs 3D animation: which should you choose?","datePublished":"2026-10-03","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/2d-vs-3d-animation/"},"description":"2D vs 3D animation: how they differ in look, time and cost, and how to choose the right format for your project.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"2D vs 3D animation: which should you choose?","item":"https://expansionvideos.com/blog/2d-vs-3d-animation/"}]}</script>'''
+
+P['blog/explainer-video-cost/index.html'] = {
+'title': 'How Much Does an Explainer Video Cost? 2026 Pricing Guide | ExpansionVideos',
+'desc': 'How much does an explainer video cost? A 2026 pricing guide: typical ranges, what drives the price, and what should be included. From $797.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/blog/" style="color:var(--blue,#2563eb)">← Blog</a></p>
+    <h1 class="h1">How much does an explainer video cost?</h1>
+    <p class="sub">October 30, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>One of the first questions every buyer asks is simple: how much does an explainer video cost? The honest answer is that it depends on length, style and complexity, but the ranges are predictable. Here is a clear breakdown so you can budget with confidence.</p>
+<h2>The short answer</h2>
+<p>A professional animated explainer video typically runs from around $800 for a short 2D piece to several thousand dollars for longer, premium or more complex productions. At ExpansionVideos, 2D animation starts at $797 per 30 seconds with everything included. AI video is priced per project, since cost there depends on the script and how much custom work it needs.</p>
+<h2>What drives the price</h2>
+<ul>
+<li><strong>Length.</strong> Most explainer videos are 60 to 90 seconds. Price scales with runtime, so a 30-second ad costs less than a 90-second homepage video.</li>
+<li><strong>Style.</strong> 2D animation is the versatile, cost-effective default. AI video is often cheaper for simple pieces. Premium and 3D work cost more.</li>
+<li><strong>Scenes and complexity.</strong> More custom characters, detailed illustration and intricate motion take more hours.</li>
+<li><strong>Voiceover and languages.</strong> A professional voiceover is usually included. Extra languages and subtitles add a predictable per-language cost.</li>
+<li><strong>Revisions.</strong> Watch for studios that charge per revision. Ours are unlimited until you approve.</li>
+</ul>
+<h2>What should be included in the price</h2>
+<p>A fair quote covers script and storyboard, professional voiceover, custom animation and design, music and sound, and HD delivery for web, social and ads. If any of those are billed as extras, the sticker price is not the real price.</p>
+<h2>Cheap vs. worth it</h2>
+<p>You can find five-dollar marketplace videos and twenty-thousand-dollar agency productions for the same brief. The sweet spot for most businesses is a studio that gives you custom work, a real process and a fixed, transparent price. A video that actually explains your product and converts is worth far more than it costs.</p>
+<h2>See the full breakdown</h2>
+<p>Our complete pricing, with what is included at each tier, is on the <a href="/pricing/">pricing page</a>. To go deeper on the format, read about <a href="/explainer-video/">explainer video production</a> and <a href="/2d-animation/">2D animation</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>How much does a 60-second explainer video cost?</strong><br>A 60-second 2D animated explainer starts from the $797 per-30-seconds base and scales with length. See the pricing page for exact tiers.</p>
+<p><strong>Why is AI video priced per project?</strong><br>AI production cost depends heavily on the script and how much custom animation and cleanup it needs, so we quote it per project. Send your script for a quote.</p>
+<p><strong>Are revisions extra?</strong><br>No. Revisions are unlimited until you are happy with the final video.</p>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Want a quote for your video?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/pricing/" class="btn btn-outline btn-lg">See Pricing</a></div></div></section>
+'''}
+P['blog/explainer-video-cost/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How much does an explainer video cost?","datePublished":"2026-10-30","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/explainer-video-cost/"},"description":"How much does an explainer video cost? A 2026 pricing guide: typical ranges, what drives the price, and what should be included.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/explainer-video-cost/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a 60-second explainer video cost?","acceptedAnswer":{"@type":"Answer","text":"A 60-second 2D animated explainer starts from the $797 per-30-seconds base and scales with length. See the pricing page for exact tiers."}},{"@type":"Question","name":"Why is AI video priced per project?","acceptedAnswer":{"@type":"Answer","text":"AI production cost depends heavily on the script and how much custom animation and cleanup it needs, so we quote it per project. Send your script for a quote."}},{"@type":"Question","name":"Are revisions extra?","acceptedAnswer":{"@type":"Answer","text":"No. Revisions are unlimited until you are happy with the final video."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"How much does an explainer video cost?","item":"https://expansionvideos.com/blog/explainer-video-cost/"}]}</script>'''
+
+P['blog/best-explainer-video-companies/index.html'] = {
+'title': 'How to Choose the Best Explainer Video Company (2026) | ExpansionVideos',
+'desc': 'How to choose the best explainer video company: what to look for, red flags to avoid, and how to shortlist the right studio for your project.',
+'body': '''
+<section class="hero" style="min-height:auto;padding:140px 32px 60px">
+<div class="wrap"><div class="hero-text" style="max-width:100%">
+    <p class="label"><a href="/blog/" style="color:var(--blue,#2563eb)">← Blog</a></p>
+    <h1 class="h1">How to choose the best explainer video company</h1>
+    <p class="sub">October 30, 2026</p>
+</div></div></section>
+<section class="sec" style="padding-top:40px"><div class="wrap">
+<div class="article-content" style="max-width:720px;margin:0 auto">
+<p>Search for an explainer video company and you will find thousands of studios, freelancers and marketplaces, all promising great results. So how do you choose? This guide covers what actually separates a strong explainer video company from a risky one, and how to shortlist the right partner.</p>
+<h2>What to look for</h2>
+<ul>
+<li><strong>A real portfolio.</strong> Look for finished work in your style and ideally your industry. One or two polished samples are not enough. You want consistency across many projects.</li>
+<li><strong>A clear process.</strong> Script, storyboard, voiceover, animation, revisions. A studio that can explain its process will deliver more predictably than one that cannot.</li>
+<li><strong>Transparent pricing.</strong> Fixed, published prices beat vague quotes. You should know what you pay before you commit.</li>
+<li><strong>Everything included.</strong> Script, professional voiceover, music and revisions should be part of the price, not surprise add-ons.</li>
+<li><strong>Unlimited revisions.</strong> The best studios keep refining until you approve, rather than charging per round.</li>
+<li><strong>Reasonable turnaround.</strong> A typical animated explainer takes about 3 to 4 weeks. Much faster can mean templated work. Much slower can mean an overloaded team.</li>
+</ul>
+<h2>Red flags</h2>
+<ul>
+<li>Prices that seem too good to be true, often marketplace gigs built on recycled templates.</li>
+<li>No voiceover or script included in the base price.</li>
+<li>Per-revision charges that balloon the final cost.</li>
+<li>A portfolio of stock animations rather than custom work.</li>
+</ul>
+<h2>Where to find studios</h2>
+<p>Beyond a simple search, directories like Clutch, GoodFirms and DesignRush list and review explainer video companies, which is a useful way to compare portfolios and read verified client reviews. Shortlist three or four, then talk to each about your specific project.</p>
+<h2>Why clients choose ExpansionVideos</h2>
+<p>We have produced 500+ videos since 2015 for companies across 56+ industries, including names like Toyota and Deloitte. Our 2D animation starts at a fixed $797 per 30 seconds, with script, professional voiceover, music, custom animation and unlimited revisions included, plus a money-back guarantee. See our <a href="/explainer-video/">explainer video production</a>, browse the <a href="/portfolio/">portfolio</a>, or <a href="/case-studies/">read case studies</a>.</p>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2 class="h2">Looking for an explainer video company?</h2><p class="sub">Book a free call and get a quote within 24 hours.</p>
+<div class="cta-btns"><a href="https://calendly.com/mikael-hamrin/30min" class="btn btn-fill btn-lg">Book Free Call →</a><a href="/portfolio/" class="btn btn-outline btn-lg">See Our Work</a></div></div></section>
+'''}
+P['blog/best-explainer-video-companies/index.html']['schema'] = '''<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to choose the best explainer video company","datePublished":"2026-10-30","author":{"@type":"Person","name":"Mikael Hamrin"},"publisher":{"@type":"Organization","name":"ExpansionVideos","logo":{"@type":"ImageObject","url":"https://expansionvideos.com/img/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://expansionvideos.com/blog/best-explainer-video-companies/"},"description":"How to choose the best explainer video company: what to look for, red flags to avoid, and how to shortlist the right studio.","image":"https://expansionvideos.com/img/logo.png","url":"https://expansionvideos.com/blog/best-explainer-video-companies/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://expansionvideos.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://expansionvideos.com/blog/"},{"@type":"ListItem","position":3,"name":"How to choose the best explainer video company","item":"https://expansionvideos.com/blog/best-explainer-video-companies/"}]}</script>'''
 
 P['privacy-policy/index.html'] = {
 'title': 'Privacy Policy | ExpansionVideos',
