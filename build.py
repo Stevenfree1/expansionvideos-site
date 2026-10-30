@@ -11,7 +11,7 @@ HEAD = '''<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="stylesheet" href="/css/style.css">
-<link rel="icon" href="/img/favicon.png" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ExpansionVideos">
 <meta property="og:url" content="{url}">
@@ -1407,6 +1407,14 @@ _css_dst = os.path.join(SITE, 'css', 'style.css')
 os.makedirs(os.path.dirname(_css_dst), exist_ok=True)
 shutil.copyfile(_css_src, _css_dst)
 print(f'css emitted: css/style.css ({os.path.getsize(_css_dst):,} bytes)')
+
+# --- Favicons: copy the tracked brand icons into the build root (for browser tab + Google) ---
+_brand_dir = os.path.join(os.path.dirname(__file__), 'brand')
+for _ic in ['favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png']:
+    _src = os.path.join(_brand_dir, _ic)
+    if os.path.exists(_src):
+        shutil.copyfile(_src, os.path.join(SITE, _ic))
+        print(f'favicon emitted: {_ic}')
 
 # --- Emit JS: cookie consent manager ---
 _js_src = os.path.join(os.path.dirname(__file__), 'js', 'cookie-consent.js')
