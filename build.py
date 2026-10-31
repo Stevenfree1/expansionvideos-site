@@ -43,6 +43,7 @@ FOOT = '''
 </div>
 <div class="ftr-bottom">&copy; 2015–2026 ExpansionVideos, part of Villadose LLC &nbsp;·&nbsp; Sheridan, Wyoming, USA &nbsp;·&nbsp; <a href="/privacy-policy/">Privacy</a> &nbsp;·&nbsp; <a href="/terms-of-service/">Terms</a> &nbsp;·&nbsp; <a href="/cookie-policy/">Cookies</a></div>
 </div></footer>
+<script src="/js/chat-widget.js" data-brand="ev" data-side="left" defer></script>
 </body></html>'''
 
 P = {}
@@ -1422,6 +1423,9 @@ _js_dst = os.path.join(SITE, 'js', 'cookie-consent.js')
 os.makedirs(os.path.dirname(_js_dst), exist_ok=True)
 shutil.copyfile(_js_src, _js_dst)
 print('js emitted: js/cookie-consent.js')
+shutil.copyfile(os.path.join(os.path.dirname(__file__), 'js', 'chat-widget.js'),
+                os.path.join(SITE, 'js', 'chat-widget.js'))
+print('js emitted: js/chat-widget.js')
 
 # --- robots.txt: welcome all crawlers (including AI search engines) + sitemap ---
 _robots = """# ExpansionVideos - all crawlers welcome, including AI search engines.
