@@ -25,6 +25,7 @@ HEAD = '''<!DOCTYPE html>
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","@id":"https://expansionvideos.com/#org","name":"Expansion Videos","alternateName":"ExpansionVideos","url":"https://expansionvideos.com","logo":"https://expansionvideos.com/img/logo.png","image":"https://expansionvideos.com/img/logo.png","description":"Animated explainer video production: 2D Animation, AI-Video and Premium. 500+ videos for 56+ industries since 2015.","foundingDate":"2015","email":"studio@expansionvideos.com","address":{{"@type":"PostalAddress","addressLocality":"Sheridan","addressRegion":"WY","addressCountry":"US"}},"areaServed":"Worldwide","knowsLanguage":["en","es","fr","de","sv"],"sameAs":["https://www.instagram.com/expansionvideos/","https://www.linkedin.com/company/expansionvideos/","https://www.tiktok.com/@expansionvideos","https://www.youtube.com/@expansionvideosofficial"]}}</script>
 {schema}
 <script src="/js/cookie-consent.js" defer></script>
+<script>/* remove legacy Tawk.to widget injected at the CDN edge */(function(){{function k(){{try{{document.querySelectorAll('iframe[src*="tawk.to"],script[src*="embed.tawk.to"],[id^="tawkchat"],[class*="tawk-"]').forEach(function(e){{e.remove();}});}}catch(_){{}}}}k();if(document.readyState==='loading'){{document.addEventListener('DOMContentLoaded',k);}}var n=0,t=setInterval(function(){{k();if(++n>75){{clearInterval(t);}}}},400);}})();</script>
 </head>
 <body>
 <header class="hdr"><div class="wrap">
