@@ -7,6 +7,7 @@ SITE = os.path.join(os.path.dirname(__file__), 'site')
 HEAD = '''<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="tiktok-developers-site-verification" content="g62cxkjUk4BWJu1PnKXMK9IMcGOpwrOX">
 <meta charset="UTF-8"><link rel="canonical" href="{url}"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
